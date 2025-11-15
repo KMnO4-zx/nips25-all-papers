@@ -391,13 +391,13 @@ def create_simple_html_page():
 </html>'''
     
     # 保存HTML文件
-    with open('neurips2025_all_papers_complete.html', 'w', encoding='utf-8') as f:
+    with open('index.html', 'w', encoding='utf-8') as f:
         f.write(html_content)
     
-    print(f"完整HTML页面已创建: neurips2025_all_papers_complete.html")
+    print(f"完整HTML页面已创建")
     print(f"页面包含 {len(papers_data)} 篇论文的完整信息")
     
-    return 'neurips2025_all_papers_complete.html'
+    return 'index.html'
 
 if __name__ == "__main__":
     create_simple_html_page()
