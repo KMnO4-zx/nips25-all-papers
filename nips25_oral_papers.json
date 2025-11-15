@@ -1,0 +1,2197 @@
+[
+  {
+    "paper_id": "KurYdcCbjv",
+    "forum_url": "https://openreview.net/forum?id=KurYdcCbjv",
+    "number": 28928,
+    "version": 2,
+    "submission_date": "2025-05-12 19:11:40",
+    "title": "Generalized Linear Mode Connectivity for Transformers",
+    "authors": [
+      "Alexander Theus",
+      "Alessandro Cabodi",
+      "Sotiris Anagnostidis",
+      "Antonio Orvieto",
+      "Sidak Pal Singh",
+      "Valentina Boeva"
+    ],
+    "abstract": "Understanding the geometry of neural network loss landscapes is a central question in deep learning, with implications for generalization and optimization. A striking phenomenon is $\\textit{linear mode connectivity}$ (LMC), where independently trained models can be connected by low- or zero-barrier paths, despite appearing to lie in separate loss basins. However, this is often obscured by symmetries in parameter space—such as neuron permutations—which make functionally equivalent models appear dissimilar. Prior work has predominantly focused on neuron reordering through permutations, but such approaches are limited in scope and fail to capture the richer symmetries exhibited by modern architectures such as Transformers. In this work, we introduce a unified framework that captures four symmetry classes—permutations, semi-permutations, orthogonal transformations, and general invertible maps—broadening the set of valid reparameterizations and subsuming many previous approaches as special cases. Crucially, this generalization enables, for the first time, the discovery of low- and zero-barrier linear interpolation paths between independently trained Vision Transformers and GPT-2 models. Furthermore, our framework extends beyond pairwise alignment, to multi-model and width-heterogeneous settings, enabling alignment across architectures of different sizes. These results reveal deeper structure in the loss landscape and underscore the importance of symmetry-aware analysis for understanding model space geometry.",
+    "keywords": [
+      "Neural Network Merging",
+      "Linear Mode Connectivity",
+      "Model Re-basin",
+      "Parameter Space Geometry",
+      "Transformer",
+      "Permutation Invariance",
+      "Model Fusion"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/74f91986c42f68d256ffcef1d4a4ee46f7530d3d.pdf",
+    "tldr": "We propose a unified framework for model merging that leverages multiple symmetry classes to enable low- and zero-loss interpolation between independently trained Transformer models, including Vision Transformers and GPT-2.",
+    "reply_count": 23,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "jzPQRbGkAq",
+    "forum_url": "https://openreview.net/forum?id=jzPQRbGkAq",
+    "number": 27970,
+    "version": 2,
+    "submission_date": "2025-05-12 16:51:13",
+    "title": "Deep Compositional Phase Diffusion for Long Motion Sequence Generation",
+    "authors": [
+      "Ho Yin Au",
+      "Jie Chen",
+      "Junkun Jiang",
+      "Jingyu Xiang"
+    ],
+    "abstract": "Recent research on motion generation has shown significant progress in generating semantically aligned motion with singular semantics. However, when employing these models to create composite sequences containing multiple semantically generated motion clips, they often struggle to preserve the continuity of motion dynamics at the transition boundaries between clips, resulting in awkward transitions and abrupt artifacts. To address these challenges, we present Compositional Phase Diffusion, which leverages the Semantic Phase Diffusion Module (SPDM) and Transitional Phase Diffusion Module (TPDM) to progressively incorporate semantic guidance and phase details from adjacent motion clips into the diffusion process. Specifically, SPDM and TPDM operate within the latent motion frequency domain established by the pre-trained Action-Centric Motion Phase Autoencoder (ACT-PAE). This allows them to learn semantically important and transition-aware phase information from variable-length motion clips during training. Experimental results demonstrate the competitive performance of our proposed framework in generating compositional motion sequences that align semantically with the input conditions, while preserving phase transitional continuity between preceding and succeeding motion clips. Additionally, motion inbetweening task is made possible by keeping the phase parameter of the input motion sequences fixed throughout the diffusion process, showcasing the potential for extending the proposed framework to accommodate various application scenarios. Codes are available at\nhttps://github.com/asdryau/TransPhase.",
+    "keywords": [
+      "Motion Generation",
+      "Phase Autoencoder",
+      "Long Term Motion Sequence Generation",
+      "Motion Inbetweening"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/1130d293ca50514da0c4fc6832964cee8756084b.pdf",
+    "tldr": "The proposed Compositional Phase Diffusion framework consistently generates semantically aligned multi-clip motion with smooth transitions by using latent-phase diffusion modules (SPDM and TPDM) to preserve phase continuity and enable inbetweening.",
+    "reply_count": 15,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "eafIjoZAHm",
+    "forum_url": "https://openreview.net/forum?id=eafIjoZAHm",
+    "number": 27245,
+    "version": 2,
+    "submission_date": "2025-05-12 14:54:01",
+    "title": "GnnXemplar: Exemplars to Explanations - Natural Language Rules for Global GNN Interpretability",
+    "authors": [
+      "Burouj Armgaan",
+      "Eshan Jain",
+      "Harsh Pandey",
+      "Mahesh Chandran",
+      "Sayan Ranu"
+    ],
+    "abstract": "Graph Neural Networks (GNNs) are widely used for node classification, yet their opaque decision-making limits trust and adoption. While local explanations offer insights into individual predictions, global explanation methods—those that characterize an entire class—remain underdeveloped. Existing global explainers rely on motif discovery in small graphs, an approach that breaks down in large, real-world settings where subgraph repetition is rare, node attributes are high-dimensional, and predictions arise from complex structure-attribute interactions. We propose GnnXemplar, a novel global explainer inspired from Exemplar Theory from cognitive science. GnnXemplar identifies representative nodes in the GNN embedding space—exemplars—and explains predictions using natural language rules derived from their neighborhoods. Exemplar selection is framed as a coverage maximization problem over reverse $k$-nearest neighbors, for which we provide an efficient greedy approximation. To derive interpretable rules, we employ a self-refining prompt strategy using large language models (LLMs). Experiments across diverse benchmarks show that GnnXemplar significantly outperforms existing methods in fidelity, scalability, and human interpretability, as validated by a user study with 60 participants.",
+    "keywords": [
+      "graph neural network",
+      "graph machine learning",
+      "explainability",
+      "xai",
+      "global explanation",
+      "text-based explanation",
+      "exemplar",
+      "exemplar theory"
+    ],
+    "primary_area": "social_and_economic_aspects_of_machine_learning",
+    "pdf_url": "https://openreview.net/pdf/4c15b12cff38ede047ec44b0df28590572e447cc.pdf",
+    "tldr": "We generate global text-based explanations using representative nodes (exemplars) in the embedding space. The exemplars are selected via coverage maximization, and their signatures are explained using natural language rules from a self-refining LLM.",
+    "reply_count": 21,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "tirl2l9oKg",
+    "forum_url": "https://openreview.net/forum?id=tirl2l9oKg",
+    "number": 25671,
+    "version": 2,
+    "submission_date": "2025-05-12 10:52:33",
+    "title": "RAG4GFM: Bridging Knowledge Gaps in Graph Foundation Models through Graph Retrieval Augmented Generation",
+    "authors": [
+      "Xingliang Wang",
+      "Zemin Liu",
+      "Junxiao Han",
+      "Shuiguang Deng"
+    ],
+    "abstract": "Graph Foundation Models (GFMs) have demonstrated remarkable potential across graph learning tasks but face significant challenges in knowledge updating and reasoning faithfulness. To address these issues, we introduce the Retrieval-Augmented Generation (RAG) paradigm for GFMs, which leverages graph knowledge retrieval. We propose RAG4GFM, an end-to-end framework that seamlessly integrates multi-level graph indexing, task-aware retrieval, and graph fusion enhancement. \nRAG4GFM implements a hierarchical graph indexing architecture, enabling multi-granular graph indexing while achieving efficient logarithmic-time retrieval. The task-aware retriever implements adaptive retrieval strategies for node, edge, and graph-level tasks to surface structurally and semantically relevant evidence. \nThe graph fusion enhancement module fuses retrieved graph features with query features and augments the topology with sparse adjacency links that preserve structural and semantic proximity, yielding a fused graph for GFM inference.\nExtensive experiments conducted across diverse GFM applications demonstrate that RAG4GFM significantly enhances both the efficiency of knowledge updating and reasoning faithfulness\\footnote{Code: \\url{https://github.com/Matrixmax/RAG4GFM}.}.",
+    "keywords": [
+      "Graph Foundation Model",
+      "Retrieval-Augmented Generation",
+      "Graph Index",
+      "Graph Repersentation Learning"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/2c14726b32b7480217772d637c5094332ff58091.pdf",
+    "tldr": "",
+    "reply_count": 23,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "XPe55Uffd7",
+    "forum_url": "https://openreview.net/forum?id=XPe55Uffd7",
+    "number": 25001,
+    "version": 2,
+    "submission_date": "2025-05-12 09:07:08",
+    "title": "Agnostic Active Learning Is Always Better Than Passive Learning",
+    "authors": [
+      "Steve Hanneke"
+    ],
+    "abstract": "We sharply characterize the optimal first-order query complexity of agnostic active learning for all concept classes, and propose a new general active learning algorithm which achieves it. Remarkably, the optimal query complexity admits a leading term which is always strictly smaller than the sample complexity of passive supervised learning (by a factor proportional to the best-in-class error rate). This was not previously known to be possible in the agnostic setting. For comparison, in all previous general analyses, the leading term exhibits an additional factor, such as the disagreement coefficient or related complexity measure, and therefore only provides improvements over passive learning in restricted cases. The present work completely removes such factors from the leading term, implying that $\\textit{every}$ concept class benefits from active learning in the non-realizable case. The results established in this work resolve an important long-standing open question central to the past two decades of research on the theory of agnostic active learning.",
+    "keywords": [
+      "Active learning",
+      "Agnostic learning",
+      "PAC learning",
+      "Query complexity",
+      "Minimax analysis",
+      "VC dimension",
+      "Star number",
+      "Disagreement coefficient"
+    ],
+    "primary_area": "theory",
+    "pdf_url": "https://openreview.net/pdf/94f81d674cd7515ab9afcee952a96a32eb663874.pdf",
+    "tldr": "We prove that for every concept class, the optimal query complexity of agnostic active learning is strictly smaller than the sample complexity of agnostic passive learning.",
+    "reply_count": 17,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "QN0E0KX2LM",
+    "forum_url": "https://openreview.net/forum?id=QN0E0KX2LM",
+    "number": 24659,
+    "version": 2,
+    "submission_date": "2025-05-12 07:48:14",
+    "title": "Learning Linear Attention in Polynomial Time",
+    "authors": [
+      "Morris Yau",
+      "Ekin Akyürek",
+      "Jiayuan Mao",
+      "Joshua B. Tenenbaum",
+      "Stefanie Jegelka",
+      "Jacob Andreas"
+    ],
+    "abstract": "Previous research has explored the expressivity of Transformer models in simulating Boolean circuits or Turing machines. However, the efficient learnability of Transformers from data has remained an open question.  Our study addresses this gap by providing the first polynomial-time learnability results (specifically strong, agnostic PAC learning) for single-layer Transformers with linear attention.  We show that learning the optimal multi head linear attention can be recast as finding the optimal kernel predictor in a suitably defined RKHS.  Moving to generalization, we construct an algorithm that, given a dataset, checks in polynomial time whether the set of best fit multi head linear attention networks on this data all perform an identical computation--a powerful notion for out of distribution generalization.  We empirically validate our theoretical findings on several canonical tasks: learning random linear attention networks, key--value associations, and learning to execute finite automata. Our findings bridge a critical gap between theoretical expressivity and learnability of Transformer models.",
+    "keywords": [
+      "Transformers",
+      "Learning Theory",
+      "PAC learning"
+    ],
+    "primary_area": "theory",
+    "pdf_url": "https://openreview.net/pdf/664b997e23d5c83139996347fba8ac4856a7fc05.pdf",
+    "tldr": "We develop algorithms that are guaranteed to PAC learn transformers.",
+    "reply_count": 12,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "EoebmBe9fG",
+    "forum_url": "https://openreview.net/forum?id=EoebmBe9fG",
+    "number": 24340,
+    "version": 2,
+    "submission_date": "2025-05-12 06:35:45",
+    "title": "Optimal Mistake Bounds for Transductive Online Learning",
+    "authors": [
+      "Zachary Chase",
+      "Steve Hanneke",
+      "Shay Moran",
+      "Jonathan Shafer"
+    ],
+    "abstract": "We resolve a 30-year-old open problem concerning the power of unlabeled data in online learning by tightly quantifying the gap between transductive and standard online learning. We prove that for every concept class $\\mathcal{H}$ with Littlestone dimension $d$, the transductive mistake bound is at least $\\Omega(\\sqrt{d})$. This establishes an exponential improvement over previous lower bounds of $\\Omega(\\log \\log d)$, $\\Omega(\\sqrt{\\log d})$, and $\\Omega(\\log d)$, respectively due to Ben-David, Kushilevitz, and Mansour (1995, 1997) and Hanneke, Moran, and Shafer (2023). We also show that our bound is tight: for every $d$, there exists a class of Littlestone dimension $d$ with transductive mistake bound $O(\\sqrt{d})$. Our upper bound also improves the previous best known upper bound of $(2/3) \\cdot d$ from Ben-David et al. (1997). These results demonstrate a quadratic gap between transductive and standard online learning, thereby highlighting the benefit of advanced access to the unlabeled instance sequence. This stands in stark contrast to the PAC setting, where transductive and standard learning exhibit similar sample complexities.",
+    "keywords": [
+      "Online Learning"
+    ],
+    "primary_area": "theory",
+    "pdf_url": "https://openreview.net/pdf/2a0ec285d5d3aa6db1f012b5a8b57723ad861064.pdf",
+    "tldr": "",
+    "reply_count": 16,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "rtG7n93Ru8",
+    "forum_url": "https://openreview.net/forum?id=rtG7n93Ru8",
+    "number": 24315,
+    "version": 2,
+    "submission_date": "2025-05-12 06:30:31",
+    "title": "State Entropy Regularization for Robust Reinforcement Learning",
+    "authors": [
+      "Yonatan Ashlag",
+      "Uri Koren",
+      "Mirco Mutti",
+      "Esther Derman",
+      "Pierre-Luc Bacon",
+      "Shie Mannor"
+    ],
+    "abstract": "State entropy regularization has empirically shown better exploration and sample complexity in reinforcement learning (RL). However, its theoretical guarantees have not been studied. In this paper, we show that state entropy regularization improves robustness to structured and spatially correlated perturbations. These types of variation are common in transfer learning but often overlooked by standard robust RL methods, which typically focus on small, uncorrelated changes. We provide a comprehensive characterization of these robustness properties, including formal guarantees under reward and transition uncertainty, as well as settings where the method performs poorly. Much of our analysis contrasts state entropy with the widely used policy entropy regularization, highlighting their different benefits. Finally, from a practical standpoint, we illustrate that compared with policy entropy, the robustness advantages of state entropy are more sensitive to the number of rollouts used for policy evaluation.",
+    "keywords": [
+      "Robust Reinforcement Learning",
+      "Risk-Averse Reinforcement Learning",
+      "Regularized Reinforcement Learning"
+    ],
+    "primary_area": "reinforcement_learning",
+    "pdf_url": "https://openreview.net/pdf/23d6f82bef4878cd0ca086c24ac8ee9d013269da.pdf",
+    "tldr": "",
+    "reply_count": 21,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "kVz9uvqUna",
+    "forum_url": "https://openreview.net/forum?id=kVz9uvqUna",
+    "number": 23888,
+    "version": 2,
+    "submission_date": "2025-05-12 05:06:34",
+    "title": "On the Closed-Form of Flow Matching: Generalization Does Not Arise from Target Stochasticity",
+    "authors": [
+      "Quentin Bertrand",
+      "Anne Gagneux",
+      "Mathurin Massias",
+      "Rémi Emonet"
+    ],
+    "abstract": "Modern deep generative models can now produce high-quality synthetic samples that are often indistinguishable from real training data. A growing body of research aims to understand why recent methods, such as diffusion and flow matching techniques, generalize so effectively. Among the proposed explanations are the inductive biases of deep learning architectures and the stochastic nature of the conditional flow matching loss. In this work, we rule out the noisy nature of the loss as a key factor driving generalization in flow matching.\nFirst, we empirically show that in high-dimensional settings, the stochastic and closed-form versions of the flow matching loss yield nearly equivalent losses. Then, using state-of-the-art flow matching models on standard image datasets, we demonstrate that both variants achieve comparable statistical performance, with the surprising observation that using the closed-form can even improve performance.",
+    "keywords": [
+      "flow matching",
+      "generalization",
+      "memorization"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/891239399aeb4629291513a63696bb354288ee3c.pdf",
+    "tldr": "We leverage the closed-form formulation of flow matching to understand its generalization",
+    "reply_count": 24,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "BSZqpqgqM0",
+    "forum_url": "https://openreview.net/forum?id=BSZqpqgqM0",
+    "number": 23738,
+    "version": 2,
+    "submission_date": "2025-05-12 04:37:40",
+    "title": "Why Diffusion Models Don’t Memorize:  The Role of Implicit Dynamical Regularization in Training",
+    "authors": [
+      "Tony Bonnaire",
+      "Raphaël Urfin",
+      "Giulio Biroli",
+      "Marc Mezard"
+    ],
+    "abstract": "Diffusion models have achieved remarkable success across a wide range of generative tasks. A key challenge is understanding the mechanisms that prevent their memorization of training data and allow generalization. In this work, we investigate the role of the training dynamics in the transition from generalization to memorization. Through extensive experiments and theoretical analysis, we identify two distinct timescales: an early time $\\tau_\\mathrm{gen}$ at which models begin to generate high-quality samples, and a later time $\\tau_\\mathrm{mem}$ beyond which memorization emerges. Crucially, we find that $\\tau_\\mathrm{mem}$ increases linearly with the training set size $n$, while $\\tau_\\mathrm{gen}$ remains constant. This creates a growing window of training times with $n$ where models generalize effectively, despite showing strong memorization if training continues beyond it. It is only when $n$ becomes larger than a model-dependent threshold that overfitting disappears at infinite training times.\nThese findings reveal a form of implicit dynamical regularization in the training dynamics, which allow to avoid memorization even in highly overparameterized settings. Our results are supported by numerical experiments with standard U-Net architectures on realistic and synthetic  datasets, and by a theoretical analysis using a tractable random features model studied in the high-dimensional limit.",
+    "keywords": [
+      "Diffusion Models",
+      "Deep Learning",
+      "Probabilistic Methods"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/5e614f505850b9817f74307cdc7119e86647f339.pdf",
+    "tldr": "Implicit dynamical regularization during training gives diffusion models a generalization window that widens with the training set size, so stopping within this window prevents memorization.",
+    "reply_count": 20,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "rMhQBlhh4c",
+    "forum_url": "https://openreview.net/forum?id=rMhQBlhh4c",
+    "number": 23277,
+    "version": 2,
+    "submission_date": "2025-05-12 03:02:28",
+    "title": "Adjoint Schrödinger Bridge Sampler",
+    "authors": [
+      "Guan-Horng Liu",
+      "Jaemoo Choi",
+      "Yongxin Chen",
+      "Benjamin Kurt Miller",
+      "Ricky T. Q. Chen"
+    ],
+    "abstract": "Computational methods for learning to sample from the Boltzmann distribution—where the target distribution is known only up to an unnormalized energy function—have advanced significantly recently. Due to the lack of explicit target samples, however, prior diffusion-based methods, known as _diffusion samplers_, often require importance-weighted estimation or complicated learning processes. Both trade off scalability with extensive evaluations of the energy and model, thereby limiting their practical usage. In this work, we propose **Adjoint Schrödinger Bridge Sampler (ASBS)**, a new diffusion sampler that employs simple and scalable matching-based objectives yet without the need to estimate target samples during training. ASBS is grounded on a mathematical model—the Schrödinger Bridge—which enhances sampling efficiency via kinetic-optimal transportation. Through a new lens of stochastic optimal control theory, we demonstrate how SB-based diffusion samplers can be learned at scale via Adjoint Matching and prove convergence to the global solution. Notably, ASBS generalizes the recent Adjoint Sampling (Havens et al., 2025) to arbitrary source distributions by relaxing the so-called memoryless condition that largely restricts the design space. Through extensive experiments, we demonstrate the effectiveness of ASBS on sampling from classical energy functions, amortized conformer generation, and molecular Boltzmann distributions. Codes are available at https://github.com/facebookresearch/adjoint_samplers",
+    "keywords": [
+      "Boltzmann distribution",
+      "diffusion sampler",
+      "Schrödinger bridge"
+    ],
+    "primary_area": "probabilistic_methods",
+    "pdf_url": "https://openreview.net/pdf/45bc3fcad4a6dba8f542267c1e0476fcddd39647.pdf",
+    "tldr": "",
+    "reply_count": 19,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "RxkCwOKVKa",
+    "forum_url": "https://openreview.net/forum?id=RxkCwOKVKa",
+    "number": 21991,
+    "version": 2,
+    "submission_date": "2025-05-11 23:03:15",
+    "title": "Breaking the Performance Ceiling in Reinforcement Learning requires Inference Strategies",
+    "authors": [
+      "Felix Chalumeau",
+      "Daniel Rajaonarivonivelomanantsoa",
+      "Ruan John de Kock",
+      "Juan Claude Formanek",
+      "Sasha Abramowitz",
+      "Omayma Mahjoub",
+      "Wiem Khlifi",
+      "Simon Verster Du Toit",
+      "Louay Ben Nessir",
+      "Refiloe Shabe",
+      "Arnol Manuel Fokam",
+      "Siddarth Singh",
+      "Ulrich Armel Mbou Sob",
+      "Arnu Pretorius"
+    ],
+    "abstract": "Reinforcement learning (RL) systems have countless applications, from energy-grid management to protein design. However, such real-world scenarios are often extremely difficult, combinatorial in nature, and require complex coordination between multiple agents. This level of complexity can cause even state-of-the-art RL systems, trained until convergence, to hit a performance ceiling which they are unable to break out of with zero-shot inference. Meanwhile, many digital or simulation-based applications allow for an inference phase that utilises a specific time and compute budget to explore multiple attempts before outputting a final solution. In this work, we show that such an inference phase employed at execution time, and the choice of a corresponding inference strategy, are key to breaking the performance ceiling observed in complex multi-agent RL problems. Our main result is striking: we can obtain up to a 126% and, on average, a 45% improvement over the previous state-of-the-art across 17 tasks, using only a couple seconds of extra wall-clock time during execution. We also demonstrate promising compute scaling properties, supported by over 60k experiments, making it the largest study on inference strategies for complex RL to date. We make all of our experimental data and code available.",
+    "keywords": [
+      "reinforcement learning",
+      "inference strategies",
+      "complex decision-making"
+    ],
+    "primary_area": "reinforcement_learning",
+    "pdf_url": "https://openreview.net/pdf/5d59ea40926886752f5ab100ab83a383587e3e1e.pdf",
+    "tldr": "Using search strategies at inference-time can provide massive performance boost on numerous complex reinforcement learning tasks, within only a couple seconds of execution time.",
+    "reply_count": 21,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "UVDihUz0iT",
+    "forum_url": "https://openreview.net/forum?id=UVDihUz0iT",
+    "number": 21919,
+    "version": 2,
+    "submission_date": "2025-05-11 22:51:16",
+    "title": "High-Dimensional Calibration from Swap Regret",
+    "authors": [
+      "Maxwell Fishelson",
+      "Noah Golowich",
+      "Mehryar Mohri",
+      "Jon Schneider"
+    ],
+    "abstract": "We study the online calibration of multi-dimensional forecasts over an arbitrary convex set $\\mathcal{P} \\subset \\mathbb{R}^d$ relative to an arbitrary norm $\\Vert\\cdot\\Vert$. We connect this with the problem of external regret minimization for online linear optimization, showing that if it is possible to guarantee $O(\\sqrt{\\rho T})$ worst-case regret after $T$ rounds when actions are drawn from $\\mathcal{P}$ and losses are drawn from the dual $\\Vert \\cdot \\Vert_*$ unit norm ball, then it is also possible to obtain $\\epsilon$-calibrated forecasts after $T = \\exp(O(\\rho /\\epsilon^2))$ rounds. When $\\mathcal{P}$ is the $d$-dimensional simplex and $\\Vert \\cdot \\Vert$ is the $\\ell_1$-norm, the existence of $O(\\sqrt{T\\log d})$ algorithms for learning with experts implies that it is possible to obtain $\\epsilon$-calibrated forecasts after $T = \\exp(O(\\log{d}/\\epsilon^2)) = d^{O(1/\\epsilon^2)}$ rounds, recovering a recent result of Peng 2025.\n\nInterestingly, our algorithm obtains this guarantee without requiring access to any online linear optimization subroutine or knowledge of the optimal rate $\\rho$ -- in fact, our algorithm is identical for every setting of $\\mathcal{P}$ and $\\Vert \\cdot \\Vert$. Instead, we show that the optimal regularizer for the above OLO problem can be used to upper bound the above calibration error by a swap regret, which we then minimize by running the recent TreeSwap algorithm with Follow-The-Leader as a subroutine. The resulting algorithm is highly efficient and plays a distribution over simple averages of past observations in each round.\n\nFinally, we prove that any online calibration algorithm that guarantees $\\epsilon T$ $\\ell_1$-calibration error over the $d$-dimensional simplex requires $T \\geq \\exp(\\mathrm{poly}(1/\\epsilon))$ (assuming $d \\geq \\mathrm{poly}(1/\\epsilon)$). This strengthens the corresponding $d^{\\Omega(\\log{1/\\epsilon})}$ lower bound of Peng 2025, and shows that an exponential dependence on $1/\\epsilon$ is necessary.",
+    "keywords": [
+      "Calibration",
+      "Swap Regret",
+      "Online Learning"
+    ],
+    "primary_area": "theory",
+    "pdf_url": "https://openreview.net/pdf/19a18bbaefcf873913387af0639e84fbfbf6e1a2.pdf",
+    "tldr": "An algorithm for calibrating forecasts of high-dimensional outcomes.",
+    "reply_count": 16,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "CH72XyZs4y",
+    "forum_url": "https://openreview.net/forum?id=CH72XyZs4y",
+    "number": 21825,
+    "version": 2,
+    "submission_date": "2025-05-11 22:36:17",
+    "title": "In Search of Adam’s Secret Sauce",
+    "authors": [
+      "Antonio Orvieto",
+      "Robert M. Gower"
+    ],
+    "abstract": "Understanding the remarkable efficacy of Adam when training transformer-based language models has become a central research topic within the optimization community. To gain deeper insights, several simplifications of Adam have been proposed, such as the signed gradient and signed momentum methods. In this work, we conduct an extensive empirical study — training over 1,500 language models across different data configurations and scales — comparing Adam to several known simplified variants. We find that signed momentum methods are faster than SGD, but consistently underperform relative to Adam, even after careful tuning of momentum, clipping setting and learning rates. However, our analysis reveals a compelling option that preserves near-optimal performance while allowing for new insightful reformulations: constraining the Adam momentum parameters to be equal, $\\beta_1=\\beta_2$. Beyond robust performance, this choice affords new theoretical insights, highlights the \"secret sauce\" on top of signed momentum, and grants a precise statistical interpretation: we show that Adam in this setting implements a natural online algorithm for estimating the mean and variance of gradients—one that arises from a mean-field Gaussian variational inference perspective.",
+    "keywords": [
+      "Adam",
+      "Language Models",
+      "Transformers",
+      "Adaptive Methods",
+      "Optimization"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/d2de68be318d2ac7661579409536262dccab57c3.pdf",
+    "tldr": "Adam with equal betas works well, and its form can be simplified for further insights",
+    "reply_count": 18,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "U8BwT6Rmw4",
+    "forum_url": "https://openreview.net/forum?id=U8BwT6Rmw4",
+    "number": 21330,
+    "version": 2,
+    "submission_date": "2025-05-11 21:01:01",
+    "title": "An Optimized Franz-Parisi Criterion and its Equivalence with SQ Lower Bounds",
+    "authors": [
+      "Siyu Chen",
+      "Theodor Misiakiewicz",
+      "Ilias Zadik",
+      "Peiyuan Zhang"
+    ],
+    "abstract": "Bandeira et al. (2022) introduced the Franz-Parisi (FP) criterion for characterizing the computational hard phases in statistical detection problems. The FP criterion, based on an annealed version of the celebrated Franz-Parisi potential from statistical physics, was shown to be equivalent to low-degree polynomial (LDP) lower bounds for Gaussian additive models, thereby connecting two distinct approaches to understanding the computational hardness in statistical inference. \nIn this paper, we propose a refined FP criterion that aims to better capture the geometric ``overlap\" structure of statistical models. Our main result establishes that this optimized FP criterion is equivalent to Statistical Query (SQ) lower bounds---another foundational framework in computational complexity of statistical inference.  Crucially, this equivalence holds under a mild, verifiable assumption satisfied by a broad class of statistical models, including Gaussian additive models, planted sparse models, as well as non-Gaussian component analysis (NGCA), single-index (SI) models, and convex truncation detection settings. For instance, in the case of convex truncation tasks, the assumption is equivalent with the Gaussian correlation inequality (Royen, 2014) from convex geometry. In addition to the above, our equivalence not only unifies and simplifies the derivation of several known SQ lower bounds—such as for the NGCA model (Diakonikolas et al., 2017) and the SI model (Damian et al., 2024)—but also yields new SQ lower bounds of independent interest, including for the computational gaps in mixed sparse linear regression (Arpino et al., 2023) and convex truncation (De et al., 2023).",
+    "keywords": [
+      "statistical query",
+      "Franz-Parisi criterion",
+      "computational hardness in statistical inference"
+    ],
+    "primary_area": "theory",
+    "pdf_url": "https://openreview.net/pdf/50d26562ec0998ba8c6b4c00cd65e873b12970ca.pdf",
+    "tldr": "We propose a refined Franz-Parisi criterion, and show that it is equivalent to Statistical Query lower bounds under a mild, verifiable assumption satisfied by a broad class of statistical models.",
+    "reply_count": 21,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "efOq8wHH9o",
+    "forum_url": "https://openreview.net/forum?id=efOq8wHH9o",
+    "number": 20847,
+    "version": 2,
+    "submission_date": "2025-05-11 19:01:52",
+    "title": "MaxSup: Overcoming Representation Collapse in Label Smoothing",
+    "authors": [
+      "Yuxuan Zhou",
+      "Heng Li",
+      "Zhi-Qi Cheng",
+      "Xudong Yan",
+      "Yifei Dong",
+      "Mario Fritz",
+      "Margret Keuper"
+    ],
+    "abstract": "Label Smoothing (LS) is widely adopted to reduce overconfidence in neural network predictions and improve generalization. Despite these benefits, recent studies reveal two critical issues with LS. First, LS induces overconfidence in misclassified samples. Second, it compacts feature representations into overly tight clusters, diluting intra-class diversity, although the precise cause of this phenomenon remained elusive. In this paper, we analytically decompose the LS-induced loss, exposing two key terms: (i) a regularization term that dampens overconfidence only when the prediction is correct, and (ii) an error-amplification term that arises under misclassifications. This latter term compels the network to reinforce incorrect predictions with undue certainty, exacerbating representation collapse. To address these shortcomings, we propose Max Suppression (MaxSup), which applies uniform regularization to both correct and incorrect predictions by penalizing the top-1 logit rather than the ground-truth logit. Through extensive feature-space analyses, we show that MaxSup restores intra-class variation and sharpens inter-class boundaries. Experiments on large-scale image classification and multiple downstream tasks confirm that MaxSup is a more robust alternative to LS.Code and reproducibility scripts are available at https://github.com/ZhouYuxuanYX/Maximum-Suppression-Regularization.",
+    "keywords": [
+      "Label Smoothing",
+      "Representation Collapse",
+      "Max Suppression."
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/b0fd12b382545f65caa48de1e7037305e1e4c7d5.pdf",
+    "tldr": "",
+    "reply_count": 21,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "IfD2MKTmWv",
+    "forum_url": "https://openreview.net/forum?id=IfD2MKTmWv",
+    "number": 20777,
+    "version": 2,
+    "submission_date": "2025-05-11 18:37:50",
+    "title": "Memory Mosaics at scale",
+    "authors": [
+      "Jianyu Zhang",
+      "Leon Bottou"
+    ],
+    "abstract": "Memory Mosaics, networks of associative memories, have demonstrated appealing compositional and in-context learning capabilities on medium-scale networks (GPT-2 scale) and synthetic small datasets. This work shows that these favorable properties remain when we scale memory mosaics to large language model sizes (llama-8B scale) and real-world datasets. \n\nTo this end, we scale memory mosaics to 10B size, we train them on one trillion tokens, we introduce a couple architectural modifications (*memory mosaics v2*), we assess their capabilities across three evaluation dimensions: training-knowledge storage, new-knowledge storage, and in-context learning. \n\nThroughout the evaluation, memory mosaics v2 match transformers on the learning of training knowledge (first dimension) and significantly outperforms transformers on carrying out new tasks at inference time (second and third dimensions). These improvements cannot be easily replicated by simply increasing the training data for transformers. A memory mosaics v2 trained on one trillion tokens still perform better on these tasks than a transformer trained on eight trillion tokens.",
+    "keywords": [
+      "In-context learning",
+      "memory mosaics"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/3c9cfbf81dbf50f6ca6d10c5c953d2370922037d.pdf",
+    "tldr": "",
+    "reply_count": 25,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "jMhRbV47pS",
+    "forum_url": "https://openreview.net/forum?id=jMhRbV47pS",
+    "number": 20556,
+    "version": 2,
+    "submission_date": "2025-05-11 17:37:50",
+    "title": "The emergence of sparse attention: impact of data distribution and benefits of repetition",
+    "authors": [
+      "Nicolas Zucchet",
+      "Francesco D'Angelo",
+      "Andrew Kyle Lampinen",
+      "Stephanie C.Y. Chan"
+    ],
+    "abstract": "Emergence is a fascinating property of large language models and neural networks more broadly: as models scale and train for longer, they sometimes develop new abilities in sudden ways. Despite initial studies, we still lack a comprehensive understanding of how and when these abilities emerge. To address this gap, we study the emergence over training of sparse attention, a critical and frequently observed attention pattern in Transformers. By combining theoretical analysis of a toy model with empirical observations on small Transformers trained on a linear regression variant, we uncover the mechanics driving sparse attention emergence and reveal that emergence timing follows power laws based on task structure, architecture, and optimizer choice. We additionally find that repetition can greatly speed up emergence. Finally, we confirm these results on a well-studied in-context associative recall task. Our findings provide a simple, theoretically grounded framework for understanding how data distributions and model design influence the learning dynamics behind one form of emergence.",
+    "keywords": [
+      "emergence",
+      "sparse attention",
+      "in-context learning",
+      "induction head"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/eff77c0e34c1afa98f3048d1ce66080f4a7fe493.pdf",
+    "tldr": "We show that learning sparse attention is prone to emerging behaviors during training, and study (theoretically and empirically) how data and model design influence emergence speed.",
+    "reply_count": 16,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "aLhA7AYLLR",
+    "forum_url": "https://openreview.net/forum?id=aLhA7AYLLR",
+    "number": 20382,
+    "version": 2,
+    "submission_date": "2025-05-11 17:02:34",
+    "title": "ControlFusion: A Controllable Image Fusion Network with Language-Vision Degradation Prompts",
+    "authors": [
+      "Linfeng Tang",
+      "Yeda Wang",
+      "Zhanchuan Cai",
+      "Junjun Jiang",
+      "Jiayi Ma"
+    ],
+    "abstract": "Current image fusion methods struggle with real-world composite degradations and lack the flexibility to accommodate user-specific needs. To address this, we propose ControlFusion, a controllable fusion network guided by language-vision prompts that adaptively mitigates composite degradations. On the one hand, we construct a degraded imaging model based on physical mechanisms, such as the Retinex theory and atmospheric scattering principle, to simulate composite degradations and provide a data foundation for addressing realistic degradations. On the other hand, we devise a prompt-modulated restoration and fusion network that dynamically enhances features according to degradation prompts, enabling adaptability to varying degradation levels. To support user-specific preferences in visual quality, a text encoder is incorporated to embed user-defined degradation types and levels as degradation prompts. Moreover, a spatial-frequency collaborative visual adapter is designed to autonomously perceive degradations from source images, thereby reducing complete reliance on user instructions. Extensive experiments demonstrate that ControlFusion outperforms SOTA fusion methods in fusion quality and degradation handling, particularly under real-world and compound degradations.",
+    "keywords": [
+      "Image fusion",
+      "multimodal images",
+      "degradation"
+    ],
+    "primary_area": "applications",
+    "pdf_url": "https://openreview.net/pdf/4657b8a7ce8cb30d0f51b00bd5e7c46d10fc348c.pdf",
+    "tldr": "",
+    "reply_count": 17,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "MrUsZfQ9pC",
+    "forum_url": "https://openreview.net/forum?id=MrUsZfQ9pC",
+    "number": 19885,
+    "version": 2,
+    "submission_date": "2025-05-11 15:12:28",
+    "title": "Identifiability of Deep Polynomial Neural Networks",
+    "authors": [
+      "Konstantin Usevich",
+      "Ricardo Augusto Borsoi",
+      "Clara Dérand",
+      "Marianne Clausel"
+    ],
+    "abstract": "Polynomial Neural Networks (PNNs) possess a rich algebraic and geometric structure. However, their identifiability-a key property for ensuring interpretability-remains poorly understood. In this work, we present a comprehensive analysis of the identifiability of deep PNNs, including architectures with and without bias terms. Our results reveal an intricate interplay between activation degrees and layer widths in achieving identifiability. As special cases, we show that architectures with non-increasing layer widths are generically identifiable under mild conditions, while encoder-decoder networks are identifiable when the decoder widths do not grow too rapidly compared to the activation degrees. Our proofs are constructive and center on a connection between deep PNNs and low-rank tensor decompositions, and Kruskal-type uniqueness theorems. We also settle an open conjecture on the dimension of PNN's neurovarieties, and provide new bounds on the activation degrees required for it to reach the expected dimension.",
+    "keywords": [
+      "polynomial neural networks",
+      "identifiability",
+      "tensor decompositions",
+      "uniqueness"
+    ],
+    "primary_area": "theory",
+    "pdf_url": "https://openreview.net/pdf/688a13aa8f22f541fc2e1180784180233670ca4e.pdf",
+    "tldr": "We provide necessary and sufficient conditions for the identifiability deep polinomial neural networks.",
+    "reply_count": 26,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "Q3qAsZAEZw",
+    "forum_url": "https://openreview.net/forum?id=Q3qAsZAEZw",
+    "number": 19233,
+    "version": 2,
+    "submission_date": "2025-05-11 12:28:54",
+    "title": "Understanding and Mitigating Numerical Sources of Nondeterminism in LLM Inference",
+    "authors": [
+      "Jiayi Yuan",
+      "Hao Li",
+      "Xinheng Ding",
+      "Wenya Xie",
+      "Yu-Jhe Li",
+      "Wentian Zhao",
+      "Kun Wan",
+      "Jing Shi",
+      "Xia Hu",
+      "Zirui Liu"
+    ],
+    "abstract": "Large Language Models (LLMs) are now integral across various domains and have demonstrated impressive performance. Progress, however, rests on the premise that benchmark scores are both accurate and reproducible. We demonstrate that the reproducibility of LLM performance is fragile: changing system configuration, such as evaluation batch size, GPU count, and GPU version, can introduce significant differences in the generated responses. \nThis issue is especially pronounced in reasoning models, where minor rounding differences in early tokens can cascade into divergent chains of thought, ultimately affecting accuracy. For instance, under bfloat16 precision with greedy decoding, a reasoning model like DeepSeek-R1-Distill-Qwen-7B can exhibit up to 9\\% variation in accuracy and 9,000 tokens difference in response length due to differences in GPU count, type, and evaluation batch size.\nWe trace the root cause of this variability to the non-associative nature of floating-point arithmetic under limited numerical precision. \nThis work presents the first systematic investigation into how numerical precision affects reproducibility in LLM inference. Through carefully controlled experiments across various hardware, software, and precision settings, we quantify when and how model outputs diverge.\nOur analysis reveals that floating-point precision—while critical for reproducibility—is often neglected in evaluation practices.\nInspired by this, we develop a lightweight inference pipeline, dubbed LayerCast, that stores weights in 16-bit precision but performs all computations in FP32, balancing memory efficiency with numerical stability. Code is available at https://github.com/nanomaoli/llm_reproducibility.",
+    "keywords": [
+      "Large Language Models (LLMs)",
+      "Reproducibility",
+      "Numerical precision",
+      "Deterministic inference"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/0025fad6ba784349766905dc7158027e8500db26.pdf",
+    "tldr": "This paper demonstrates that low precision causes non-reproducible LLM inference across different setups, proposing a hybrid-precision method, LayerCast, that computes in FP32 to achieve determinism while saving memory.",
+    "reply_count": 21,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "4xvE6Iy77Y",
+    "forum_url": "https://openreview.net/forum?id=4xvE6Iy77Y",
+    "number": 19187,
+    "version": 2,
+    "submission_date": "2025-05-11 12:15:49",
+    "title": "PRIMT: Preference-based Reinforcement Learning with Multimodal Feedback and Trajectory Synthesis from Foundation Models",
+    "authors": [
+      "Ruiqi Wang",
+      "Dezhong Zhao",
+      "Ziqin Yuan",
+      "Tianyu Shao",
+      "Guohua Chen",
+      "Dominic Kao",
+      "Sungeun Hong",
+      "Byung-Cheol Min"
+    ],
+    "abstract": "Preference-based reinforcement learning (PbRL) has emerged as a promising paradigm for teaching robots complex behaviors without reward engineering. However, its effectiveness is often limited by two critical challenges: the reliance on extensive human input and the inherent difficulties in resolving query ambiguity and credit assignment during reward learning. In this paper, we introduce PRIMT, a PbRL framework designed to overcome these challenges by leveraging foundation models (FMs) for multimodal synthetic feedback and trajectory synthesis. Unlike prior approaches that rely on single-modality FM evaluations, PRIMT employs a hierarchical neuro-symbolic fusion strategy, integrating the complementary strengths of vision-language models (VLMs) and large language models (LLMs) in evaluating robot behaviors for more reliable and comprehensive feedback. PRIMT also incorporates foresight trajectory generation to warm-start the trajectory buffer with bootstrapped samples, reducing early-stage query ambiguity, and hindsight trajectory augmentation for counterfactual reasoning with a causal auxiliary loss to improve credit assignment. We evaluate PRIMT on 2 locomotion and 6 manipulation tasks on various benchmarks, demonstrating superior performance over FM-based and scripted baselines. Website at https://primt25.github.io/.",
+    "keywords": [
+      "Preference-based Reinforcement Learning",
+      "Foundation Models for Robotics",
+      "Neuro-Symbolic Fusion",
+      "Multimodal Feedback",
+      "Causal Inference",
+      "Trajectory Synthesis",
+      "Robot Manipulation"
+    ],
+    "primary_area": "reinforcement_learning",
+    "pdf_url": "https://openreview.net/pdf/cdfd3bdfaabcaadcbca0caae2c468c1730a2cc88.pdf",
+    "tldr": "",
+    "reply_count": 23,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "R73ybUciQF",
+    "forum_url": "https://openreview.net/forum?id=R73ybUciQF",
+    "number": 18050,
+    "version": 2,
+    "submission_date": "2025-05-11 05:43:17",
+    "title": "A is for Absorption: Studying Feature Splitting and Absorption in Sparse Autoencoders",
+    "authors": [
+      "David Chanin",
+      "James Wilken-Smith",
+      "Tomáš Dulka",
+      "Hardik Bhatnagar",
+      "Satvik Golechha",
+      "Joseph Isaac Bloom"
+    ],
+    "abstract": "Sparse Autoencoders (SAEs) aim to decompose the activation space of large language models (LLMs) into human-interpretable latent directions or features. As we increase the number of features in the SAE, hierarchical features tend to split into finer features (“math” may split into “algebra”, “geometry”, etc.), a phenomenon referred to as feature splitting. However, we show that sparse decomposition and splitting of hierarchical features is not robust. Specifically, we show that seemingly monosemantic features fail to fire where they should, and instead get “absorbed” into their children features. We coin this phenomenon feature absorption, and show that it is caused by optimizing for sparsity in SAEs whenever the underlying features form a hierarchy. We introduce a metric to detect absorption in SAEs, and validate our findings empirically on hundreds of LLM SAEs. Our investigation suggests that varying SAE sizes or sparsity is insufficient to solve this issue. We discuss the implications of feature absorption in SAEs and some potential approaches to solve the fundamental theoretical issues before SAEs can be used for interpreting LLMs robustly and at scale.",
+    "keywords": [
+      "sparse autoencoders",
+      "SAEs",
+      "interpretability",
+      "NLP"
+    ],
+    "primary_area": "social_and_economic_aspects_of_machine_learning",
+    "pdf_url": "https://openreview.net/pdf/7d86b58a316a5f311749202f078711e685e83d19.pdf",
+    "tldr": "",
+    "reply_count": 19,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "B6bE2GC71a",
+    "forum_url": "https://openreview.net/forum?id=B6bE2GC71a",
+    "number": 17950,
+    "version": 2,
+    "submission_date": "2025-05-11 04:59:33",
+    "title": "EvoLM: In Search of Lost Language Model Training Dynamics",
+    "authors": [
+      "Zhenting Qi",
+      "Fan Nie",
+      "Alexandre Alahi",
+      "James Zou",
+      "Himabindu Lakkaraju",
+      "Yilun Du",
+      "Eric P. Xing",
+      "Sham M. Kakade",
+      "Hanlin Zhang"
+    ],
+    "abstract": "Modern language model (LM) training has been divided into multiple stages, making it difficult for downstream developers to evaluate the impact of design choices made at each stage.\nWe present EvoLM, a model suite that enables systematic and transparent analysis of LMs' training dynamics across pre-training, continued pre-training, supervised fine-tuning, and reinforcement learning. \nBy training over 100 LMs with 1B and 4B parameters from scratch, we rigorously evaluate both upstream (language modeling) and downstream (problem-solving) reasoning capabilities, including considerations of both in-domain and out-of-domain generalization. \nKey insights highlight the diminishing returns from excessive pre-training and post-training, the importance and practices of mitigating forgetting during domain-specific continued pre-training, the crucial role of continued pre-training in bridging pre-training and post-training phases, and various intricate trade-offs when configuring supervised fine-tuning and reinforcement learning. \nTo facilitate open research and reproducibility, we release all pre-trained and post-trained models, training datasets for all stages, and our entire training and evaluation pipeline.",
+    "keywords": [
+      "Language Models",
+      "Training Dynamics",
+      "Pretraining",
+      "Post-training"
+    ],
+    "primary_area": "evaluation",
+    "pdf_url": "https://openreview.net/pdf/14de60efe8605425acc42e80c951ab233757b232.pdf",
+    "tldr": "",
+    "reply_count": 17,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "WhEPg4mUs6",
+    "forum_url": "https://openreview.net/forum?id=WhEPg4mUs6",
+    "number": 17487,
+    "version": 2,
+    "submission_date": "2025-05-11 02:02:10",
+    "title": "Analog In-memory Training on General Non-ideal Resistive Elements: The Impact of Response Functions",
+    "authors": [
+      "Zhaoxian Wu",
+      "Quan Xiao",
+      "Tayfun Gokmen",
+      "Omobayode Fagbohungbe",
+      "Tianyi Chen"
+    ],
+    "abstract": "As the economic and environmental costs of training and deploying large vision or language models increase dramatically, analog in-memory computing (AIMC) emerges as a promising energy-efficient solution. However, the training perspective, especially its training dynamic, is underexplored. In AIMC hardware, the trainable weights are represented by the conductance of resistive elements and updated using consecutive electrical pulses.  While the conductance changes by a constant in response to each pulse, in reality, the change is scaled by asymmetric and non-linear response functions, leading to a non-ideal training dynamic. This paper provides a theoretical foundation for gradient-based training on AIMC hardware with non-ideal response functions.  We demonstrate that asymmetric response functions negatively impact Analog SGD by imposing an implicit penalty on the objective. To overcome the issue, we propose residual learning algorithm, which provably converges exactly to a critical point by solving a bilevel optimization problem. We show that the proposed method can be extended to deal with other hardware imperfections like limited response granularity. As far as we know, it is the first paper to investigate the impact of a class of generic non-ideal response functions. The conclusion is supported by simulations validating our theoretical insights.",
+    "keywords": [
+      "Analog AI; in-memory computing; stochastic gradient descent; stochastic optimization"
+    ],
+    "primary_area": "optimization",
+    "pdf_url": "https://openreview.net/pdf/c7391a261412f9b9cb6caea01c99e9c438cdd9ae.pdf",
+    "tldr": "Leveraging a residual learning framework to support the model training on non-ideal analog in-memory computing hardware",
+    "reply_count": 19,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "zJdutIT6vT",
+    "forum_url": "https://openreview.net/forum?id=zJdutIT6vT",
+    "number": 16695,
+    "version": 2,
+    "submission_date": "2025-05-10 22:41:33",
+    "title": "Discovering Opinion Intervals from Conflicts in Signed Graphs",
+    "authors": [
+      "Peter Blohm",
+      "Florian Chen",
+      "Aristides Gionis",
+      "Stefan Neumann"
+    ],
+    "abstract": "Online social media provide a platform for people to discuss current events and exchange opinions with their peers. While interactions are predominantly positive, in recent years, there has been a lot of research to understand the conflicts in social networks and how they are based on different views and opinions.  In this paper, we ask whether the conflicts in a network reveal a small and interpretable set of prevalent opinion ranges that explain the users' interactions.  More precisely, we consider signed graphs, where the edge signs indicate positive and negative interactions of node pairs, and our goal is to infer opinion intervals that are consistent with the edge signs.  We introduce an optimization problem that models this question, and we give strong hardness results and a polynomial-time approximation scheme by utilizing connections to interval graphs and the Correlation Clustering problem.  We further provide scalable heuristics and show that in experiments they yield more expressive solutions than Correlation Clustering baselines. We also present a case study on a novel real-world dataset from the German parliament, showing that our algorithms can recover the political leaning of German parties based on co-voting behavior.",
+    "keywords": [
+      "Signed graphs",
+      "intervals graphs",
+      "social networks",
+      "correlation clustering",
+      "opinions"
+    ],
+    "primary_area": "social_and_economic_aspects_of_machine_learning",
+    "pdf_url": "https://openreview.net/pdf/252e26c11d0b9285764aac57f73357053a5e5cf1.pdf",
+    "tldr": "We present a novel problem that allows to infer a small and interpretable set of prevalent opinion ranges in signed graphs, that explain the users' interactions.",
+    "reply_count": 14,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "8P3QNSckMp",
+    "forum_url": "https://openreview.net/forum?id=8P3QNSckMp",
+    "number": 16407,
+    "version": 2,
+    "submission_date": "2025-05-10 21:35:13",
+    "title": "A Clean Slate for Offline Reinforcement Learning",
+    "authors": [
+      "Matthew Thomas Jackson",
+      "Uljad Berdica",
+      "Jarek Luca Liesen",
+      "Shimon Whiteson",
+      "Jakob Nicolaus Foerster"
+    ],
+    "abstract": "Progress in offline reinforcement learning (RL) has been impeded by ambiguous problem definitions and entangled algorithmic designs, resulting in inconsistent implementations, insufficient ablations, and unfair evaluations. Although offline RL explicitly avoids environment interaction, prior methods frequently employ extensive, undocumented online evaluation for hyperparameter tuning, complicating method comparisons. Moreover, existing reference implementations differ significantly in boilerplate code, obscuring their core algorithmic contributions. We address these challenges by first introducing a rigorous taxonomy and a transparent evaluation protocol that explicitly quantifies online tuning budgets. To resolve opaque algorithmic design, we provide clean, minimalistic, single-file implementations of various model-free and model-based offline RL methods, significantly enhancing clarity and achieving substantial speed-ups. Leveraging these streamlined implementations, we propose Unifloral, a unified algorithm that encapsulates diverse prior approaches and enables development within a single, comprehensive hyperparameter space. Using Unifloral with our rigorous evaluation protocol, we develop two novel algorithms - TD3-AWR (model-free) and MoBRAC (model-based) - which substantially outperform established baselines. Our implementation is publicly available at https://github.com/EmptyJackson/unifloral.",
+    "keywords": [
+      "Offline Reinforcement Learning",
+      "Evaluation",
+      "Open-Source"
+    ],
+    "primary_area": "reinforcement_learning",
+    "pdf_url": "https://openreview.net/pdf/548092c11dc7744e0af9d36725437f4d98fa64c8.pdf",
+    "tldr": "We propose a principled taxonomy, evaluation procedure, and unified algorithm space for offline RL.",
+    "reply_count": 21,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "F0JzotXYgC",
+    "forum_url": "https://openreview.net/forum?id=F0JzotXYgC",
+    "number": 16345,
+    "version": 2,
+    "submission_date": "2025-05-10 21:21:41",
+    "title": "Spectral Perturbation Bounds for Low-Rank Approximation with Applications to Privacy",
+    "authors": [
+      "Phuc Tran",
+      "Van Vu",
+      "Nisheeth K. Vishnoi"
+    ],
+    "abstract": "A central challenge in machine learning is to understand how noise or measurement errors affect low-rank approximations, particularly in the spectral norm. This question is especially important in differentially private low-rank approximation, where one aims to preserve the top-$p$ structure of a data-derived matrix while ensuring privacy. Prior work often analyzes Frobenius norm error or changes in reconstruction quality, but these metrics can over- or under-estimate true subspace distortion. The spectral norm, by contrast, captures worst-case directional error and provides the strongest utility guarantees. We establish new high-probability spectral-norm perturbation bounds for symmetric matrices that refine the classical Eckart--Young--Mirsky theorem and explicitly capture interactions between a matrix $A \\in \\mathbb{R}^{n \\times n}$ and an arbitrary symmetric perturbation $E$. Under mild eigengap and norm conditions, our bounds yield sharp estimates for $\\| (A + E)_p - A_p \\|$, where $A_p$ is the best rank-$p$ approximation of $A$, with improvements of up to a factor of $\\sqrt{n}$. As an application, we derive improved utility guarantees for differentially private PCA, resolving an open problem in the literature. Our analysis relies on a novel contour bootstrapping method from complex analysis and extends it to a broad class of spectral functionals, including polynomials and matrix exponentials. Empirical results on real-world datasets confirm that our bounds closely track the actual spectral error under diverse perturbation regimes.",
+    "keywords": [
+      "Spectral norm",
+      "low-rank approximation",
+      "differentially private PCA",
+      "contour integration",
+      "matrix analysis"
+    ],
+    "primary_area": "theory",
+    "pdf_url": "https://openreview.net/pdf/b748950cc0c155fde8159e615990d64ccf328c30.pdf",
+    "tldr": "We derive sharp spectral-norm bounds for noisy low-rank approximation, improving prior results by up to $\\sqrt{n}$. Applied to DP-PCA, our method resolves an open problem and matches empirical error via a novel contour bootstrapping technique.",
+    "reply_count": 22,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "gxfusMqPIs",
+    "forum_url": "https://openreview.net/forum?id=gxfusMqPIs",
+    "number": 16340,
+    "version": 2,
+    "submission_date": "2025-05-10 21:21:13",
+    "title": "Improved Regret Bounds for Gaussian Process Upper Confidence Bound in Bayesian Optimization",
+    "authors": [
+      "Shogo Iwazaki"
+    ],
+    "abstract": "This paper addresses the Bayesian optimization problem (also referred to as the Bayesian setting of the Gaussian process bandit), where the learner seeks to minimize the regret under a function drawn from a known Gaussian process (GP). \nUnder a Mat\\'ern kernel with some extent of smoothness, we show that the Gaussian process upper confidence bound (GP-UCB) algorithm achieves $\\tilde{O}(\\sqrt{T})$ cumulative regret with high probability. Furthermore, our analysis yields $O(\\sqrt{T \\ln^2 T})$ regret under a squared exponential kernel. These results fill the gap between the existing regret upper bound of GP-UCB and the current best upper bound provided by Scarlett [2018]. The key idea in our proof is to capture the concentration behavior of the input sequence realized by GP-UCB, enabling us to handle GP's information gain in a refined manner.",
+    "keywords": [
+      "Gaussian process bandits",
+      "regret analysis",
+      "Bayesian optimization"
+    ],
+    "primary_area": "theory",
+    "pdf_url": "https://openreview.net/pdf/30ba01a02c79d96bd667a9fe16afbefc48fc2de6.pdf",
+    "tldr": "",
+    "reply_count": 18,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "eIDa6pd9iQ",
+    "forum_url": "https://openreview.net/forum?id=eIDa6pd9iQ",
+    "number": 16200,
+    "version": 2,
+    "submission_date": "2025-05-10 20:50:25",
+    "title": "Auto-Compressing Networks",
+    "authors": [
+      "Vaggelis Dorovatas",
+      "Georgios Paraskevopoulos",
+      "Alexandros Potamianos"
+    ],
+    "abstract": "Deep neural networks with short residual connections have demonstrated remarkable success across domains, but increasing depth often introduces computational redundancy without corresponding improvements in representation quality. We introduce Auto-Compressing Networks (ACNs), an architectural variant where additive long feedforward connections from each layer to the output replace traditional short residual connections. By analyzing the distinct dynamics induced by this modification, we reveal a unique property we coin as *auto-compression*—the ability of a network to organically compress information during training with gradient descent, through architectural design alone. Through auto-compression, information is dynamically \"pushed\" into early layers during training, enhancing their representational quality and revealing potential redundancy in deeper ones. We theoretically show that this property emerges from layer-wise training patterns found only in ACNs, where layers are dynamically utilized during training based on task requirements. We also find that ACNs exhibit enhanced noise robustness compared to residual networks, superior performance in low-data settings, improved transfer learning capabilities, and  mitigate catastrophic forgetting suggesting that they learn representations that generalize better despite using fewer parameters. Our results demonstrate up to 18\\% reduction in catastrophic forgetting and 30-80\\% architectural compression while maintaining accuracy across vision transformers, MLP-mixers, and BERT architectures. These findings establish ACNs as a practical approach to developing efficient neural architectures that automatically adapt their computational footprint to task complexity, while learning robust representations suitable for noisy real-world tasks and continual learning scenarios.",
+    "keywords": [
+      "deep learning architectures",
+      "representation learning",
+      "residual connections",
+      "continual learning"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/ade2e9a08a461601773db80e564a8c9adac3a720.pdf",
+    "tldr": "",
+    "reply_count": 22,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "oJ84bedrtM",
+    "forum_url": "https://openreview.net/forum?id=oJ84bedrtM",
+    "number": 15994,
+    "version": 2,
+    "submission_date": "2025-05-10 19:53:55",
+    "title": "MokA: Multimodal Low-Rank Adaptation for MLLMs",
+    "authors": [
+      "Yake Wei",
+      "Yu Miao",
+      "Dongzhan Zhou",
+      "Di Hu"
+    ],
+    "abstract": "In this paper, we reveal that most current efficient multimodal fine-tuning methods are hindered by a key limitation: they are directly borrowed from LLMs, often neglecting the intrinsic differences of multimodal scenarios and even affecting the full utilization of all modalities. Inspired by our empirical observation, we argue that unimodal adaptation and cross-modal adaptation are two essential parts for the effective fine-tuning of MLLMs. From this perspective, we propose Multimodal Low-rank Adaptation (MokA), a multimodal-aware efficient fine-tuning strategy that takes multimodal characteristics into consideration. It compresses unimodal information by modality-specific parameters while explicitly enhancing cross-modal interaction, ensuring both unimodal and cross-modal adaptation. Extensive experiments cover three representative multimodal scenarios (audio-visual-text, visual-text, and speech-text), and multiple LLM backbones (LLaMA2, Qwen2, Qwen2.5-VL, etc). Consistent improvements indicate the efficacy and versatility of the proposed method. Ablation studies and efficiency evaluation are also conducted to fully asses our method. Overall, we think MokA provides a more targeted solution for efficient adaptation of MLLMs, paving the way for further exploration.",
+    "keywords": [
+      "Multimodal",
+      "MLLMs",
+      "PEFT",
+      "fune-tuning"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/c66d1973e1af19d72eec79d61e0d7f2fc4894729.pdf",
+    "tldr": "",
+    "reply_count": 27,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "iydmH9boLb",
+    "forum_url": "https://openreview.net/forum?id=iydmH9boLb",
+    "number": 15912,
+    "version": 2,
+    "submission_date": "2025-05-10 19:29:23",
+    "title": "Advancing Expert Specialization for Better MoE",
+    "authors": [
+      "Hongcan Guo",
+      "Haolang Lu",
+      "Guoshun Nan",
+      "Bolun Chu",
+      "Jialin Zhuang",
+      "Yuan Yang",
+      "Wenhao Che",
+      "Xinye Cao",
+      "Sicong Leng",
+      "Qimei Cui",
+      "Xudong Jiang"
+    ],
+    "abstract": "Mixture-of-Experts (MoE) models enable efficient scaling of large language models (LLMs) by activating only a subset of experts per input. \nHowever, we observe that the commonly used auxiliary load balancing loss often leads to expert overlap and overly uniform routing, which hinders expert specialization and degrades overall performance during post-training.\nTo address this, we propose a simple yet effective solution that introduces two complementary objectives: (1) an orthogonality loss to encourage experts to process distinct types of tokens, and (2) a variance loss to encourage more discriminative routing decisions.\nGradient-level analysis demonstrates that these objectives are compatible with the existing auxiliary loss and contribute to optimizing the training process.\nExperimental results over various model architectures and across multiple benchmarks show that our method significantly enhances expert specialization. \nNotably, our method improves classic MoE baselines with auxiliary loss by up to 23.79\\%, while also maintaining load balancing in downstream tasks, without any architectural modifications or additional components. We will release our code to contribute to the community.",
+    "keywords": [
+      "Mixture of Experts",
+      "Load Balancing",
+      "Optimization",
+      "Supervised Fine-Tuning"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/39f723331b55f80ce561b9e84c01ce678e145b92.pdf",
+    "tldr": "Our proposed orthogonality and variance losses improve performance in downstream fine-tuning of Mixture-of-Experts models by enhancing expert specificity, addressing expert homogenization caused by load balancing, while maintaining load balance.",
+    "reply_count": 19,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "gm5mkiTGOy",
+    "forum_url": "https://openreview.net/forum?id=gm5mkiTGOy",
+    "number": 15835,
+    "version": 2,
+    "submission_date": "2025-05-10 18:53:48",
+    "title": "From Condensation to Rank Collapse: A Two-Stage Analysis of Transformer Training Dynamics",
+    "authors": [
+      "Zheng-An Chen",
+      "Tao Luo"
+    ],
+    "abstract": "Although transformer-based models have shown exceptional empirical performance, the fundamental principles governing their training dynamics are inadequately characterized beyond configuration-specific studies. Inspired by empirical evidence showing improved reasoning capabilities under small initialization scales in language models, we employ the gradient flow analytical framework established in \\cite{zhou2022towards} to systematically investigate linearized Transformer training dynamics. Our theoretical analysis dissects the dynamics of attention modules into two distinct stages. In the first stage, asymmetric weight perturbations from random initialization sustain non-degenerate gradient dynamics in parameter matrices, facilitating systematic escape from small initialization regimes. Subsequently, these matrices undergo condensation, progressively aligning toward the target orientation. In the second stage, the previously static key-query matrices actively participate in training, driving the normalized matrices toward asymptotic rank collapse. This two-stage framework generalizes classical directional convergence results.",
+    "keywords": [
+      "Two-stage analysis",
+      "Training dynamics of transformers",
+      "Condensation",
+      "Small initialization"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/bd3b039b0f8ef096bad417fca855d91d35d33af9.pdf",
+    "tldr": "",
+    "reply_count": 25,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "KnqiC0znVF",
+    "forum_url": "https://openreview.net/forum?id=KnqiC0znVF",
+    "number": 15375,
+    "version": 2,
+    "submission_date": "2025-05-10 16:35:53",
+    "title": "Large Language Diffusion Models",
+    "authors": [
+      "Shen Nie",
+      "Fengqi Zhu",
+      "Zebin You",
+      "Xiaolu Zhang",
+      "Jingyang Ou",
+      "Jun Hu",
+      "JUN ZHOU",
+      "Yankai Lin",
+      "Ji-Rong Wen",
+      "Chongxuan Li"
+    ],
+    "abstract": "The capabilities of large language models (LLMs) are widely regarded as relying on autoregressive models (ARMs). We challenge this notion by introducing *LLaDA*, a diffusion model trained from scratch under the pre-training and supervised fine-tuning (SFT) paradigm. LLaDA employs a forward data masking process and a reverse generation process, parameterized by a Transformer to predict masked tokens. It provides a principled generative approach for probabilistic inference by optimizing a likelihood lower bound. Across extensive benchmarks on general tasks, math, code, and so on, LLaDA demonstrates strong *scalability* and performs comparably to our self-constructed ARM baselines. Remarkably, LLaDA 8B is competitive with strong LLMs like LLaMA3 8B in *in-context learning* and, after SFT, exhibits impressive *instruction-following* abilities in case studies such as multi-turn dialogue. Moreover, LLaDA addresses the reversal curse, surpassing GPT-4o in a reversal poem completion task. Our findings show the promise of diffusion models for language modeling at scale and challenge the common assumption that core LLM capabilities discussed above inherently depend on ARMs. Project page and codes: \\url{https://ml-gsai.github.io/LLaDA-demo/}.",
+    "keywords": [
+      "diffusion language models",
+      "large language models",
+      "masked diffusion models",
+      "discrete diffusion models",
+      "diffusion models"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/1fe4a93c34a898729c8969a3599d2e3fbb85bbd9.pdf",
+    "tldr": "We present LLaDA, a diffusion  language model trained from scratch that is competitive to LLaMA 3 in performance.",
+    "reply_count": 22,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "qYkhCah8OZ",
+    "forum_url": "https://openreview.net/forum?id=qYkhCah8OZ",
+    "number": 14912,
+    "version": 2,
+    "submission_date": "2025-05-10 14:24:38",
+    "title": "Boosting Knowledge Utilization in Multimodal Large Language Models via Adaptive Logits Fusion and Attention Reallocation",
+    "authors": [
+      "Wenbin An",
+      "Jiahao Nie",
+      "Feng Tian",
+      "Haonan Lin",
+      "mingxiang cai",
+      "Yaqiang Wu",
+      "QianYing Wang",
+      "Xiaoqin Zhang",
+      "Shijian Lu"
+    ],
+    "abstract": "Despite their recent progress, Multimodal Large Language Models (MLLMs) often struggle in knowledge-intensive tasks due to the limited and outdated parametric knowledge acquired during training. Multimodal Retrieval Augmented Generation addresses this issue by retrieving contextual knowledge from external databases, thereby enhancing MLLMs with expanded knowledge sources. \nHowever, existing MLLMs often fail to fully leverage the retrieved contextual knowledge for response generation. We examine representative MLLMs and identify two major causes, namely, attention bias toward different tokens and knowledge conflicts between parametric and contextual knowledge. To this end, we design Adaptive Logits Fusion and Attention Reallocation (ALFAR), a training-free and plug-and-play approach that improves MLLM responses by maximizing the utility of the retrieved knowledge. Specifically, ALFAR tackles the challenges from two perspectives. First, it alleviates attention bias by adaptively shifting attention from visual tokens to relevant context tokens according to query-context relevance. Second, it decouples and weights parametric and contextual knowledge at output logits, mitigating conflicts between the two types of knowledge. As a plug-and-play method, ALFAR achieves superior performance across diverse datasets without requiring additional training or external tools. Extensive experiments over multiple MLLMs and benchmarks show that ALFAR consistently outperforms the state-of-the-art by large margins. Our code and data are available at https://github.com/Lackel/ALFAR.",
+    "keywords": [
+      "Multimodal Large Language Models",
+      "Multimodal Retrieval Augmented Generation"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/40d94836204a19bf22a4813c820925434476760b.pdf",
+    "tldr": "",
+    "reply_count": 22,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "fohuurA03P",
+    "forum_url": "https://openreview.net/forum?id=fohuurA03P",
+    "number": 14862,
+    "version": 2,
+    "submission_date": "2025-05-10 14:07:44",
+    "title": "Interactive Cross-modal Learning for Text-3D Scene Retrieval",
+    "authors": [
+      "Yanglin Feng",
+      "Yongxiang Li",
+      "Yuan Sun",
+      "Yang Qin",
+      "Dezhong Peng",
+      "Peng Hu"
+    ],
+    "abstract": "Text-3D Scene Retrieval (T3SR) aims to retrieve relevant scenes using linguistic queries. Although traditional T3SR methods have made significant progress in capturing fine-grained associations, they implicitly assume that query descriptions are information-complete. In practical deployments, however, limited by the capabilities of users and models, it is difficult or even impossible to directly obtain a perfect textual query suiting the entire scene and model, thereby leading to performance degradation. To address this issue, we propose a novel Interactive Text-3D Scene Retrieval Method (IDeal), which promotes the enhancement of the alignment between texts and 3D scenes through continuous interaction. To achieve this, we present an Interactive Retrieval Refinement framework (IRR), which employs a questioner to pose contextually relevant questions to an answerer in successive rounds that either promote detailed probing or encourage exploratory divergence within scenes. Upon the iterative responses received from the answerer, IRR adopts a retriever to perform both feature-level and semantic-level information fusion, facilitating scene-level interaction and understanding for more precise re-rankings. To bridge the domain gap between queries and interactive texts, we propose an Interaction Adaptation Tuning strategy (IAT). IAT mitigates the discriminability and diversity risks among augmented text features that approximate the interaction text domain, achieving contrastive domain adaptation for our retriever. Extensive experimental results on three datasets demonstrate the superiority of IDeal.",
+    "keywords": [
+      "Cross-modal retrieval",
+      "interactive retrieval",
+      "large language model"
+    ],
+    "primary_area": "applications",
+    "pdf_url": "https://openreview.net/pdf/27bb1512bdf391d6b68fee30841e0256337489db.pdf",
+    "tldr": "We propose an Interactive Text-to-3D Scene Retrieval Method to handle inherent query limitations.",
+    "reply_count": 22,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "XoN10bZtR9",
+    "forum_url": "https://openreview.net/forum?id=XoN10bZtR9",
+    "number": 14339,
+    "version": 2,
+    "submission_date": "2025-05-10 11:04:59",
+    "title": "Rethinking Joint Maximum Mean Discrepancy for Visual Domain Adaptation",
+    "authors": [
+      "Wei Wang",
+      "Haifeng Xia",
+      "Chao Huang",
+      "Zhengming Ding",
+      "Cong Wang",
+      "Haojie Li",
+      "Xiaochun Cao"
+    ],
+    "abstract": "In domain adaption (DA), joint maximum mean discrepancy (JMMD), as a famous distribution-distance metric, aims to measure joint probability distribution difference between the source domain and target domain, while it is still not fully explored and especially hard to be applied into a subspace-learning framework as its empirical estimation involves a tensor-product operator whose partial derivative is difficult to obtain. To solve this issue, we deduce a concise JMMD based on the Representer theorem that avoids the tensor-product operator and obtains two essential findings. First, we reveal the uniformity of JMMD by proving that previous marginal, class conditional, and weighted class conditional probability distribution distances are three special cases of JMMD with different label reproducing kernels. Second, inspired by graph embedding, we observe that the similarity weights, which strengthen the intra-class compactness in the graph of Hilbert Schmidt independence criterion (HSIC), take opposite signs in the graph of JMMD, revealing why JMMD degrades the feature discrimination. This motivates us to propose a novel loss JMMD-HSIC by jointly considering JMMD and HSIC to promote discrimination of JMMD. Extensive experiments on several cross-domain datasets could demonstrate the validity of our revealed theoretical results and the effectiveness of our proposed JMMD-HSIC.",
+    "keywords": [
+      "domain adaptation",
+      "JMMD",
+      "HSIC",
+      "feature discrimination",
+      "graph embedding"
+    ],
+    "primary_area": "general_machine_learning",
+    "pdf_url": "https://openreview.net/pdf/1b443272e1391aa6da020b8096678e12334282e0.pdf",
+    "tldr": "",
+    "reply_count": 21,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "OzdAnGHEPx",
+    "forum_url": "https://openreview.net/forum?id=OzdAnGHEPx",
+    "number": 14097,
+    "version": 2,
+    "submission_date": "2025-05-10 09:53:42",
+    "title": "Pan-LUT: Efficient Pan-sharpening via Learnable Look-Up Tables",
+    "authors": [
+      "Zhongnan Cai",
+      "Yingying Wang",
+      "Hui Zheng",
+      "Panwang Pan",
+      "ZiXu Lin",
+      "Ge Meng",
+      "Chenxin Li",
+      "Chunming He",
+      "Jiaxin Xie",
+      "Yunlong Lin",
+      "Junbin Lu",
+      "Yue Huang",
+      "Xinghao Ding"
+    ],
+    "abstract": "Recently, deep learning-based pan-sharpening algorithms have achieved notable advancements over traditional methods. However, deep learning-based methods incur substantial computational overhead during inference, especially with large images. This excessive computational demand limits the applicability of these methods in real-world scenarios, particularly in the absence of dedicated computing devices such as GPUs and TPUs. To address these challenges, we propose Pan-LUT, a novel learnable look-up table (LUT) framework for pan-sharpening that strikes a balance between performance and computational efficiency for large remote sensing images. Our method makes it possible to process 15K$\\times$15K remote sensing images on a 24GB GPU. To finely control the spectral transformation, we devise the PAN-guided look-up table (PGLUT) for channel-wise spectral mapping. To effectively capture fine-grained spatial details, we introduce the spatial details look-up table (SDLUT). Furthermore, to adaptively aggregate channel information for generating high-resolution multispectral images, we design an adaptive output look-up table (AOLUT). Our model contains fewer than 700K parameters and processes a 9K$\\times$9K image in under 1 ms using one RTX 2080 Ti GPU, demonstrating significantly faster performance compared to other methods. Experiments reveal that Pan-LUT efficiently processes large remote sensing images in a lightweight manner, bridging the gap to real-world applications. Furthermore, our model surpasses SOTA methods in full-resolution scenes under real-world conditions, highlighting its effectiveness and efficiency.",
+    "keywords": [
+      "Look-Up Table",
+      "Pan-sharpening"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/a8aef76ccd0a8c60e3b79874f8811b01517b4d8e.pdf",
+    "tldr": "",
+    "reply_count": 21,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "ImpizBSKcu",
+    "forum_url": "https://openreview.net/forum?id=ImpizBSKcu",
+    "number": 13847,
+    "version": 2,
+    "submission_date": "2025-05-10 07:22:44",
+    "title": "Dynamical Decoupling of Generalization and Overfitting in Large Two-Layer Networks",
+    "authors": [
+      "Andrea Montanari",
+      "Pierfrancesco Urbani"
+    ],
+    "abstract": "Understanding the inductive bias and generalization properties of large overparametrized machine learning models requires to characterize the dynamics of the training algorithm.  We study the learning dynamics of large two-layer neural networks via dynamical mean field theory, a well established technique of non-equilibrium statistical physics. We show that, for large network width $m$,\nand large number of samples per input dimension $n/d$, the training dynamics exhibits a separation of timescales which implies:\n$(i)$ The emergence of a slow time scale associated with the growth in Gaussian/Rademacher complexity of the network;\n$(ii)$ Inductive bias towards small complexity if the initialization has small enough complexity;\n$(iii)$ A dynamical decoupling between feature learning and overfitting regimes; $(iv)$ A non-monotone behavior of the test error, associated  `feature unlearning' regime at large times.",
+    "keywords": [
+      "Overfitting; feature learning; dynamical mean field theory; generalization;"
+    ],
+    "primary_area": "theory",
+    "pdf_url": "https://openreview.net/pdf/3ef0b3385dcce1d1756e0f5e06a6c14f71d83666.pdf",
+    "tldr": "Large neural networks first learn low dimensional feature representation then overfit the data and revert to a kernel regime.",
+    "reply_count": 22,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "s0JVsx3bx1",
+    "forum_url": "https://openreview.net/forum?id=s0JVsx3bx1",
+    "number": 13446,
+    "version": 2,
+    "submission_date": "2025-05-10 03:41:13",
+    "title": "1000 Layer Networks for Self-Supervised RL: Scaling Depth Can Enable New Goal-Reaching Capabilities",
+    "authors": [
+      "Kevin Wang",
+      "Ishaan Javali",
+      "Michał Bortkiewicz",
+      "Tomasz Trzcinski",
+      "Benjamin Eysenbach"
+    ],
+    "abstract": "Scaling up self-supervised learning has driven breakthroughs in language and vision, yet comparable progress has remained elusive in reinforcement learning (RL). In this paper, we study building blocks for self-supervised RL that unlock substantial improvements in scalability, with network depth serving as a critical factor. Whereas most RL papers in recent years have relied on shallow architectures (around 2 -- 5 layers), we demonstrate that increasing the depth up to 1024 layers can significantly boost performance.\nOur experiments are conducted in an unsupervised goal-conditioned setting, where no demonstrations or rewards are provided, so an agent must explore (from scratch) and learn how to maximize the likelihood of reaching commanded goals.\nEvaluated on simulated locomotion and manipulation tasks, our approach increases performance on the self-supervised contrastive RL algorithm by $2\\times$ -- $50\\times$, outperforming other goal-conditioned baselines.\nIncreasing the model depth not only increases success rates but also qualitatively changes the behaviors learned.",
+    "keywords": [
+      "Reinforcement Learning",
+      "Self-Supervised Learning",
+      "Contrastive RL",
+      "Goal-conditioned RL",
+      "Scaling"
+    ],
+    "primary_area": "general_machine_learning",
+    "pdf_url": "https://openreview.net/pdf/d8f9da5e245cdd9a35d572aad95616457c5d3d19.pdf",
+    "tldr": "While most RL methods use shallow MLPs (~2–5 layers), we show that scaling up to 1000-layers for contrastive RL (CRL) can significantly boost performance, ranging from doubling performance to 50x on a diverse suite of robotic tasks.",
+    "reply_count": 20,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "XO9fhSZkBh",
+    "forum_url": "https://openreview.net/forum?id=XO9fhSZkBh",
+    "number": 13310,
+    "version": 2,
+    "submission_date": "2025-05-10 02:23:07",
+    "title": "Depth-Bounds for Neural Networks via the Braid Arrangement",
+    "authors": [
+      "Moritz Leo Grillo",
+      "Christoph Hertrich",
+      "Georg Loho"
+    ],
+    "abstract": "We contribute towards resolving the open question of how many hidden layers are required in ReLU networks for exactly representing all continuous and piecewise linear functions on $\\mathbb{R}^d$. \nWhile the question has been resolved in special cases, the best known lower bound in general is still 2. \nWe focus on neural networks that are compatible with certain polyhedral complexes, more precisely with the braid fan.  \nFor such neural networks, we prove a non-constant lower bound of $\\Omega(\\log\\log d)$ hidden layers required to exactly represent the maximum of $d$ numbers. Additionally, we provide a combinatorial proof that neural networks satisfying this assumption require three hidden layers to compute the maximum of 5 numbers; this had only been verified with an excessive computation so far.\nFinally, we show that a natural generalization of the best known upper bound to maxout networks is not tight, by demonstrating that a rank-3 maxout layer followed by a rank-2 maxout layer is sufficient to represent the maximum of 7 numbers.",
+    "keywords": [
+      "Neural Networks",
+      "Piecewise Linear Functions",
+      "Exact Representations",
+      "Polyhedral Geometry",
+      "Braid Fan",
+      "Boolean Lattice"
+    ],
+    "primary_area": "theory",
+    "pdf_url": "https://openreview.net/pdf/8c04a4ee51c0f1fa72a21b0d685be556a4ed2bc5.pdf",
+    "tldr": "",
+    "reply_count": 18,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "VYLdKb5dzO",
+    "forum_url": "https://openreview.net/forum?id=VYLdKb5dzO",
+    "number": 13039,
+    "version": 2,
+    "submission_date": "2025-05-10 00:14:14",
+    "title": "Tighter CMI-Based Generalization Bounds via Stochastic Projection and Quantization",
+    "authors": [
+      "Milad Sefidgaran",
+      "Kimia Nadjahi",
+      "Abdellatif Zaidi"
+    ],
+    "abstract": "In this paper, we leverage stochastic projection and lossy compression to establish new conditional mutual information (CMI) bounds on the generalization error of statistical learning algorithms. It is shown that these bounds are generally tighter than the existing ones. In particular, we prove that for certain problem instances for which existing MI and CMI bounds were recently shown in Attias et al. [2024] and Livni [2023] to become vacuous or fail to describe the right generalization behavior, our bounds yield suitable generalization guarantees of the order of $\\mathcal{O}(1/\\sqrt{n})$, where $n$ is the size of the training dataset. Furthermore, we use our bounds to investigate the problem of data \"memorization\" raised in those works, and which asserts that there are learning problem instances for which any learning algorithm that has good prediction there exist distributions under which the algorithm must \"memorize'' a big fraction of the training dataset. We show that for every learning algorithm, there exists an auxiliary algorithm that does not memorize and which yields comparable generalization error for any data distribution. In part, this shows that memorization is not necessary for good generalization.",
+    "keywords": [
+      "generalization error",
+      "information theory",
+      "conditional mutual information",
+      "CMI",
+      "learning theory",
+      "projection",
+      "memorization"
+    ],
+    "primary_area": "theory",
+    "pdf_url": "https://openreview.net/pdf/17a4208f28bec0b6f5ceafa6d0e4319064768668.pdf",
+    "tldr": "",
+    "reply_count": 28,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "sYK4yPDuT1",
+    "forum_url": "https://openreview.net/forum?id=sYK4yPDuT1",
+    "number": 13022,
+    "version": 2,
+    "submission_date": "2025-05-10 00:08:23",
+    "title": "A Snapshot of Influence: A Local Data Attribution Framework for Online Reinforcement Learning",
+    "authors": [
+      "Yuzheng Hu",
+      "Fan Wu",
+      "Haotian Ye",
+      "David Forsyth",
+      "James Zou",
+      "Nan Jiang",
+      "Jiaqi W. Ma",
+      "Han Zhao"
+    ],
+    "abstract": "Online reinforcement learning (RL) excels in complex, safety-critical domains but suffers from sample inefficiency, training instability, and limited interpretability. Data attribution provides a principled way to trace model behavior back to training samples, yet existing methods assume fixed datasets, which is violated in online RL where each experience both updates the policy and shapes future data collection.\nIn this paper, we initiate the study of data attribution for online RL, focusing on the widely used Proximal Policy Optimization (PPO) algorithm. We start by establishing a *local* attribution framework, interpreting model checkpoints with respect to the records in the recent training buffer. We design two target functions, capturing agent action and cumulative return respectively, and measure each record's contribution through gradient similarity between its training loss and these targets. We demonstrate the power of this framework through three concrete applications: diagnosis of learning, temporal analysis of behavior formation, and targeted intervention during training. Leveraging this framework, we further propose an algorithm, iterative influence-based filtering (IIF), for online RL training that iteratively performs experience filtering to refine policy updates. Across standard RL benchmarks (classic control, navigation, locomotion) to RLHF for large language models, IIF reduces sample complexity, speeds up training, and achieves higher returns. Together, these results open a new direction for making online RL more interpretable, efficient, and effective.",
+    "keywords": [
+      "data attribution",
+      "online reinforcement learning"
+    ],
+    "primary_area": "social_and_economic_aspects_of_machine_learning",
+    "pdf_url": "https://openreview.net/pdf/bd76d1744a451019158783f99fadcadc7c044b40.pdf",
+    "tldr": "We propose the first framework of data attribution for online RL.",
+    "reply_count": 23,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "cGks3s79hW",
+    "forum_url": "https://openreview.net/forum?id=cGks3s79hW",
+    "number": 12698,
+    "version": 2,
+    "submission_date": "2025-05-09 22:06:16",
+    "title": "High-dimensional neuronal activity from low-dimensional latent dynamics: a solvable model",
+    "authors": [
+      "Valentin Schmutz",
+      "Ali Haydaroğlu",
+      "Shuqi Wang",
+      "Yixiao Feng",
+      "Matteo Carandini",
+      "Kenneth D. Harris"
+    ],
+    "abstract": "Computation in recurrent networks of neurons has been hypothesized to occur at the level of low-dimensional latent dynamics, both in artificial systems and in the brain. This hypothesis seems at odds with evidence from large-scale neuronal recordings in mice showing that neuronal population activity is high-dimensional. To demonstrate that low-dimensional latent dynamics and high-dimensional activity can be two sides of the same coin, we present an analytically solvable recurrent neural network (RNN) model whose dynamics can be exactly reduced to a low-dimensional dynamical system, but generates an activity manifold that has a high linear embedding dimension. This raises the question: Do low-dimensional latents explain the high-dimensional activity observed in mouse visual cortex? Spectral theory tells us that the covariance eigenspectrum alone does not allow us to recover the dimensionality of the latents, which can be low or high, when neurons are nonlinear. To address this indeterminacy, we develop Neural Cross-Encoder (NCE), an interpretable, nonlinear latent variable modeling method for neuronal recordings, and find that high-dimensional neuronal responses to drifting gratings and spontaneous activity in visual cortex can be reduced to low-dimensional latents, while the responses to natural images cannot. We conclude that the high-dimensional activity measured in certain conditions, such as in the absence of a stimulus, is explained by low-dimensional latents that are nonlinearly processed by individual neurons.",
+    "keywords": [
+      "recurrent neural networks",
+      "neuronal recordings",
+      "visual cortex",
+      "latent variable models",
+      "PCA",
+      "eigenvalue decay",
+      "mean-field limit"
+    ],
+    "primary_area": "neuroscience_and_cognitive_science",
+    "pdf_url": "https://openreview.net/pdf/c8f71957e0a9f771d381e76065259dceb13f75b7.pdf",
+    "tldr": "We show that high-dimensional neural activity can arise from low-dimensional latent dynamics, both in RNNs and in the brain.",
+    "reply_count": 22,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "oGmROC4e4W",
+    "forum_url": "https://openreview.net/forum?id=oGmROC4e4W",
+    "number": 12633,
+    "version": 2,
+    "submission_date": "2025-05-09 21:45:36",
+    "title": "Adaptive Surrogate Gradients for Sequential Reinforcement Learning in Spiking Neural Networks",
+    "authors": [
+      "Korneel Van den Berghe",
+      "Stein Stroobants",
+      "Vijay Janapa Reddi",
+      "Guido De Croon"
+    ],
+    "abstract": "Neuromorphic computing systems are set to revolutionize energy-constrained robotics by achieving orders-of-magnitude efficiency gains, while enabling native temporal processing. Spiking Neural Networks (SNNs) represent a promising algorithmic approach for these systems, yet their application to complex control tasks faces two critical challenges: (1) the non-differentiable nature of spiking neurons necessitates surrogate gradients with unclear optimization properties, and (2) the stateful dynamics of SNNs require training on sequences, which in reinforcement learning (RL) is hindered by limited sequence lengths during early training, preventing the network from bridging its warm-up period.\n\nWe address these challenges by systematically analyzing surrogate gradient slope settings, showing that shallower slopes increase gradient magnitude in deeper layers but reduce alignment with true gradients. In supervised learning, we find no clear preference for fixed or scheduled slopes. The effect is much more pronounced in RL settings, where shallower slopes or scheduled slopes lead to a $\\times2.1$ improvement in both training and final deployed performance. Next, we propose a novel training approach that leverages a privileged guiding policy to bootstrap the learning process, while still exploiting online environment interactions with the spiking policy. Combining our method with an adaptive slope schedule for a real-world drone position control task, we achieve an average return of 400 points, substantially outperforming prior techniques, including Behavioral Cloning and TD3BC, which achieve at most –200 points under the same conditions. This work advances both the theoretical understanding of surrogate gradient learning in SNNs and practical training methodologies for neuromorphic controllers demonstrated in real-world robotic systems.",
+    "keywords": [
+      "Neuromorphics",
+      "Spiking Neural Networks",
+      "Reinforcement Learning",
+      "Surrogate Gradients",
+      "Robotics",
+      "Sequential",
+      "Temporal"
+    ],
+    "primary_area": "reinforcement_learning",
+    "pdf_url": "https://openreview.net/pdf/a7f01ee93f8541217cfdf371a55f5701fad9755f.pdf",
+    "tldr": "We improve training of spiking neural networks for energy-efficient robotic control by analyzing surrogate gradient slopes and introducing a privileged policy-guided method, achieving a 2.1× performance boost and strong real-world results.",
+    "reply_count": 24,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "aUAG1WS7J2",
+    "forum_url": "https://openreview.net/forum?id=aUAG1WS7J2",
+    "number": 11899,
+    "version": 2,
+    "submission_date": "2025-05-09 16:23:39",
+    "title": "Class-wise Balancing Data Replay for Federated Class-Incremental Learning",
+    "authors": [
+      "Zhuang Qi",
+      "Ying-Peng Tang",
+      "Lei Meng",
+      "Han Yu",
+      "Xiaoxiao Li",
+      "Xiangxu Meng"
+    ],
+    "abstract": "Federated Class Incremental Learning (FCIL) aims to collaboratively process continuously increasing incoming tasks across multiple clients. Among various approaches, data replay has become a promising solution, which can alleviate forgetting by reintroducing representative samples from previous tasks. However, their performance is typically limited by class imbalance, both within the replay buffer due to limited global awareness and between replayed and newly arrived classes. To address this issue, we propose a class-wise balancing data replay method for FCIL (FedCBDR), which employs a global coordination mechanism for class-level memory construction and reweights the learning objective to alleviate the aforementioned imbalances. Specifically, FedCBDR has two key components: 1) the global-perspective data replay module reconstructs global representations of prior task knowledge in a privacy-preserving manner, which then guides a class-aware and importance-sensitive sampling strategy to achieve balanced replay; 2) Subsequently, to handle class imbalance across tasks, the task-aware temperature scaling module adaptively adjusts the temperature of logits at both class and instance levels based on task dynamics, which reduces the model’s overconfidence in majority classes while enhancing its sensitivity to minority classes. Experimental results verified that FedCBDR achieves balanced class-wise sampling under heterogeneous data distributions and improves generalization under task imbalance between earlier and recent tasks, yielding a 2%-15% Top-1 accuracy improvement over six state-of-the-art methods.",
+    "keywords": [
+      "Federated Learning;Federated Class-Incremental Learning; Data Replay"
+    ],
+    "primary_area": "general_machine_learning",
+    "pdf_url": "https://openreview.net/pdf/ec65caf9fe04f4c9c2a17254738ed41f4bbd3198.pdf",
+    "tldr": "",
+    "reply_count": 20,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "m7MD0sa8Re",
+    "forum_url": "https://openreview.net/forum?id=m7MD0sa8Re",
+    "number": 10969,
+    "version": 2,
+    "submission_date": "2025-05-09 02:52:58",
+    "title": "Task-Optimized Convolutional Recurrent Networks Align with Tactile Processing in the Rodent Brain",
+    "authors": [
+      "Trinity Chung",
+      "Yuchen Shen",
+      "Nathan Kong",
+      "Aran Nayebi"
+    ],
+    "abstract": "Tactile sensing remains far less understood in neuroscience and less effective in artificial systems compared to more mature modalities such as vision and language.\nWe bridge these gaps by introducing a novel Encoder-Attender-Decoder (EAD) framework to systematically explore the space of task-optimized temporal neural networks trained on realistic tactile input sequences from a customized rodent whisker-array simulator. \nWe identify convolutional recurrent neural networks (ConvRNNs) as superior encoders to purely feedforward and state-space architectures for tactile categorization. \nCrucially, these ConvRNN-encoder-based EAD models achieve neural representations closely matching rodent somatosensory cortex, saturating the explainable neural variability and revealing a clear linear relationship between supervised categorization performance and neural alignment.\nFurthermore, contrastive self-supervised ConvRNN-encoder-based EADs, trained with tactile-specific augmentations, match supervised neural fits, serving as an ethologically-relevant, label-free proxy.\n\nFor neuroscience, our findings highlight nonlinear recurrent processing as important for general-purpose tactile representations in somatosensory cortex, providing the first quantitative characterization of the underlying inductive biases in this system. \nFor embodied AI, our results emphasize the importance of recurrent EAD architectures to handle realistic tactile inputs, along with tailored self-supervised learning methods for achieving robust tactile perception with the same type of sensors animals use to sense in unstructured environments.",
+    "keywords": [
+      "NeuroAI",
+      "Temporal Neural Networks",
+      "Tactile Perception",
+      "Somatosensory Cortex"
+    ],
+    "primary_area": "neuroscience_and_cognitive_science",
+    "pdf_url": "https://openreview.net/pdf/94f1271c87c84b48aca424dd22a7c00553fe1675.pdf",
+    "tldr": "Task-optimized convolutional recurrent neural networks trained on realistic tactile inputs align with rodent somatosensory data, suggesting brain tactile processing uses temporally-precise representations shaped by categorization-driven optimization.",
+    "reply_count": 21,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "Zd6VyjmN1S",
+    "forum_url": "https://openreview.net/forum?id=Zd6VyjmN1S",
+    "number": 10947,
+    "version": 2,
+    "submission_date": "2025-05-09 02:18:06",
+    "title": "ElasticMM: Efficient Multimodal LLMs Serving with Elastic Multimodal Parallelism",
+    "authors": [
+      "Zedong Liu",
+      "Shenggan Cheng",
+      "Guangming Tan",
+      "Yang You",
+      "Dingwen Tao"
+    ],
+    "abstract": "Multimodal large language models (MLLMs) extend LLMs to handle images, videos, and audio by incorporating feature extractors and projection modules. However, these additional components—combined with complex inference pipelines and heterogeneous workloads—introduce significant inference overhead. Therefore, efficiently serving MLLMs remains a major challenge. Current tightly coupled serving architectures struggle to distinguish between mixed request types or adapt parallelism strategies to different inference stages, leading to increased time-to-first-token (TTFT) and poor resource utilization. To address this, we introduce Elastic Multimodal Parallelism (EMP), a new serving paradigm that elastically adapts to resource heterogeneity across request types and inference stages. Building upon EMP, we develop ElasticMM, an MLLM serving system that (1) separates requests into independent modality groups with dynamic resource allocation via a modality-aware load balancer; (2) decouples inference stages and enables parallelism adjustment and adaptive scaling via elastic partition scheduling; and (3) improves inference efficiency through unified multimodal prefix caching and non-blocking encoding. Experiments on diverse real-world datasets show that ElasticMM outperforms state-of-the-art (SOTA) serving systems, reducing TTFT by up to 4.2$\\times$ and achieving 3.2–4.5$\\times$ higher throughput while meeting service-level objectives (SLOs).",
+    "keywords": [
+      "Hardware and Systems",
+      "Efficient Inference Methods",
+      "Distributed Inference",
+      "Visual Question Answering"
+    ],
+    "primary_area": "infrastructure",
+    "pdf_url": "https://openreview.net/pdf/7250c50e4dd72db4731ced5dc34ecbc4256eaf90.pdf",
+    "tldr": "",
+    "reply_count": 21,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "7AwFJzgIUW",
+    "forum_url": "https://openreview.net/forum?id=7AwFJzgIUW",
+    "number": 10713,
+    "version": 2,
+    "submission_date": "2025-05-08 22:42:44",
+    "title": "Dynamical Low-Rank Compression of Neural Networks with Robustness under Adversarial Attacks",
+    "authors": [
+      "Steffen Schotthöfer",
+      "H. Lexie Yang",
+      "Stefan Schnake"
+    ],
+    "abstract": "Deployment of neural networks on resource-constrained devices demands models that are both compact and robust to adversarial inputs. However, compression and adversarial robustness often conflict. In this work, we introduce a dynamical low-rank training scheme enhanced with a novel spectral regularizer that controls the condition number of the low-rank core in each layer. This approach mitigates the sensitivity of compressed models to adversarial perturbations without sacrificing clean accuracy. The method is model- and data-agnostic, computationally efficient, and supports rank adaptivity to automatically compress the network at hand. Extensive experiments across standard architectures, datasets, and adversarial attacks show the regularized networks can achieve over 94 compression while recovering or improving adversarial accuracy relative to uncompressed baselines.",
+    "keywords": [
+      "Low Rank",
+      "Adversarial Robustenss",
+      "Adversarial Attacks",
+      "Rank Adaptive",
+      "Computer Vision",
+      "Compression"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/f59d0f48e06f71167b429ed72ad0b3fedd6e4646.pdf",
+    "tldr": "",
+    "reply_count": 25,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "ZwCVFBFUFb",
+    "forum_url": "https://openreview.net/forum?id=ZwCVFBFUFb",
+    "number": 10622,
+    "version": 2,
+    "submission_date": "2025-05-08 21:41:46",
+    "title": "QoQ-Med: Building Multimodal Clinical Foundation Models with Domain-Aware GRPO Training",
+    "authors": [
+      "Wei Dai",
+      "Peilin Chen",
+      "Chanakya Ekbote",
+      "Paul Pu Liang"
+    ],
+    "abstract": "Clinical decision‑making routinely demands reasoning over heterogeneous data, yet existing multimodal language models (MLLMs) remain largely vision‑centric and fail to generalize across clinical specialties. To bridge this gap, we introduce QoQ-Med-7B/32B, the first open generalist clinical foundation model that jointly reasons across medical images, time‑series signals, and text reports. QoQ-Med is trained with Domain‑aware Relative Policy Optimization (DRPO), a novel reinforcement‑learning objective that hierarchically scales normalized rewards according to domain rarity and modality difficulty, mitigating performance imbalance caused by skewed clinical data distributions. Trained on 2.61 million instruction tuning pairs spanning 9 clinical domains, we show that DRPO training boosts diagnostic performance by 43% in macro‑F1 on average across all visual domains as compared to other critic-free training methods like GRPO. Furthermore, with QoQ-Med trained on intensive segmentation data, it is able to highlight salient regions related to the diagnosis, with an IoU 10x higher than open models while reaching the performance of OpenAI o4-mini. To foster reproducibility and downstream research, we release (i) the full model weights, (ii) the modular training pipeline, and (iii) all intermediate reasoning traces.",
+    "keywords": [
+      "machine learning",
+      "healthcare",
+      "reinforcement learning",
+      "multimodal learning",
+      "AI for healthcare",
+      "clinical AI",
+      "time series modeling",
+      "natural language processing"
+    ],
+    "primary_area": "applications",
+    "pdf_url": "https://openreview.net/pdf/b108c9d8c17d3e41084d1257c97d19a7d41f99e1.pdf",
+    "tldr": "We built a generalist clinical foundation model across both time series and vision modalities with a novel RL training algorithm named DRPO.",
+    "reply_count": 17,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "1b7whO4SfY",
+    "forum_url": "https://openreview.net/forum?id=1b7whO4SfY",
+    "number": 10615,
+    "version": 2,
+    "submission_date": "2025-05-08 21:38:01",
+    "title": "Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free",
+    "authors": [
+      "Zihan Qiu",
+      "Zekun Wang",
+      "Bo Zheng",
+      "Zeyu Huang",
+      "Kaiyue Wen",
+      "Songlin Yang",
+      "Rui Men",
+      "Le Yu",
+      "Fei Huang",
+      "Suozhi Huang",
+      "Dayiheng Liu",
+      "Jingren Zhou",
+      "Junyang Lin"
+    ],
+    "abstract": "Gating mechanisms have been widely utilized, from early models like LSTMs and Highway Networks to recent state space models, linear attention, and also softmax attention.\nYet, existing literature rarely examines the specific effects of gating.\nIn this work, we conduct comprehensive experiments to systematically investigate gating-augmented softmax attention variants.\nSpecifically, we perform a comprehensive comparison over 30 variants of 15B Mixture-of-Experts (MoE) models and 1.7B dense models trained on a 3.5 trillion token dataset.\nOur central finding is that a simple modification—applying a head-specific sigmoid gate after the Scaled Dot-Product Attention (SDPA)—consistently improves performance.\nThis modification also enhances training stability, tolerates larger learning rates, and improves scaling properties.\nBy comparing various gating positions and computational variants, we attribute this effectiveness to two key factors: (1) introducing non-linearity upon the low-rank mapping in the softmax attention, and (2) applying query-dependent sparse gating scores to modulate the SDPA output.\nNotably, we find this sparse gating mechanism mitigates `massive activation`, `attention sink` and enhances long-context extrapolation performance. \nWe also release related codes (https://github.com/qiuzh20/gated_attention}) and models (https://huggingface.co/QwQZh/gated_attention) to facilitate future research.\nFurthermore, the most effective SDPA output gating is used in the Qwen3-Next models (https://huggingface.co/collections/Qwen/qwen3-next).",
+    "keywords": [
+      "Attention",
+      "Large Language Model",
+      "Gating"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/363b779a6787084e8392405b524f10679d6da8a3.pdf",
+    "tldr": "We find applying a query-dependent head-specific sigmoid gate after the Scaled Dot-Product Attention (SDPA) consistently improves performance, improves scaling properties and mitigates the `massive activation' and `attention sink'.",
+    "reply_count": 21,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "w1ihNiIBOc",
+    "forum_url": "https://openreview.net/forum?id=w1ihNiIBOc",
+    "number": 10325,
+    "version": 2,
+    "submission_date": "2025-05-08 17:47:15",
+    "title": "Learning long range dependencies through time reversal symmetry breaking",
+    "authors": [
+      "Guillaume Pourcel",
+      "Maxence Ernoult"
+    ],
+    "abstract": "Deep State Space Models (SSMs) reignite physics-grounded compute paradigms, as RNNs could natively be embodied into dynamical systems. This calls for dedicated learning algorithms obeying to core physical principles,  with efficient techniques to simulate these systems and guide their design. We propose \\emph{Recurrent Hamiltonian Echo Learning} (RHEL), an algorithm which provably computes loss gradients as finite differences of physical trajectories of non-dissipative, \\emph{Hamiltonian systems}. In ML terms, RHEL only requires three ``forward passes'' irrespective of model size, without explicit Jacobian computation, nor incurring any variance in the gradient estimation. Motivated by the potential to implement our algorithm in non-digital physical systems, we first \nintroduce RHEL in \\emph{continuous time} and demonstrate its formal equivalence with the continuous adjoint state method.\nTo facilitate the simulation of Hamiltonian systems trained by RHEL, we propose a \\emph{discrete-time} version of RHEL which is equivalent to Backpropagation Through Time (BPTT) when applied to a class of recurrent modules which we call \\emph{Hamiltonian Recurrent Units} (HRUs). This setting allows us to demonstrate the scalability of RHEL by generalizing these results to hierarchies of HRUs, which we call \\emph{Hamiltonian SSMs} (HSSMs). We apply RHEL to train HSSMs with linear and nonlinear dynamics on a variety of time-series tasks ranging from mid-range to long-range classification and regression with sequence length reaching $\\sim 50k$. We show that RHEL consistently matches the performance of BPTT across all models and tasks. This work opens new doors for the design of scalable, energy-efficient physical systems endowed with self-learning capabilities for sequence modelling.",
+    "keywords": [
+      "physical learning",
+      "continuous adjoint method",
+      "temporal credit assignment",
+      "Hamiltonian systems",
+      "analog computing",
+      "training algorithms",
+      "state space models"
+    ],
+    "primary_area": "machine_learning_for_sciences",
+    "pdf_url": "https://openreview.net/pdf/1aa2ec637f3d95091822a3dbb75d026a81f0bfe4.pdf",
+    "tldr": "We propose a backward-mode AD proxy using only forward passes applying to Hamiltonian recurrent units and stacks thereof (namely, SSMs) with theoretical guarantees and experimental evidence",
+    "reply_count": 19,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "WJujF9An5L",
+    "forum_url": "https://openreview.net/forum?id=WJujF9An5L",
+    "number": 9982,
+    "version": 2,
+    "submission_date": "2025-05-08 14:07:56",
+    "title": "FuXi-Ocean: A Global Ocean Forecasting System with Sub-Daily Resolution",
+    "authors": [
+      "Qiusheng Huang",
+      "Yuan Niu",
+      "Xiaohui Zhong",
+      "AnboyuGuo",
+      "Lei Chen",
+      "dianjun zhang",
+      "Xuefeng Zhang",
+      "Hao Li"
+    ],
+    "abstract": "Accurate, high-resolution ocean forecasting is crucial for maritime operations and environmental monitoring. While traditional numerical models are capable of producing sub-daily, eddy-resolving forecasts, they are computationally intensive and face challenges in maintaining accuracy at fine spatial and temporal scales. In contrast, recent data-driven approaches offer improved computational efficiency and emerging potential, yet typically operate at daily resolution and struggle with sub-daily predictions due to error accumulation over time.\nWe introduce FuXi-Ocean, the first data-driven global ocean forecasting model achieving six-hourly predictions at eddy-resolving 1/12° spatial resolution, reaching depths of up to 1500 meters. The model architecture integrates a context-aware feature extraction module with a predictive network employing stacked attention blocks. The core innovation is the Mixture-of-Time (MoT) module, which adaptively integrates predictions from multiple temporal contexts by learning variable-specific reliability\n, mitigating cumulative errors in sequential forecasting. Through comprehensive experimental evaluation, FuXi-Ocean demonstrates superior skill in predicting key variables, including temperature, salinity, and currents, across multiple depths.",
+    "keywords": [
+      "AI For Science",
+      "Ocean Forecast System",
+      "Weather Forecast",
+      "Deep Learning"
+    ],
+    "primary_area": "machine_learning_for_sciences",
+    "pdf_url": "https://openreview.net/pdf/236d36470eb4f155942bc65592d5d0f3a5b60893.pdf",
+    "tldr": "The first deep-learning model for sub-daily ocean forecast",
+    "reply_count": 23,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "knPz7gtjPW",
+    "forum_url": "https://openreview.net/forum?id=knPz7gtjPW",
+    "number": 9558,
+    "version": 2,
+    "submission_date": "2025-05-08 04:49:29",
+    "title": "Superposition Yields Robust Neural Scaling",
+    "authors": [
+      "Yizhou Liu",
+      "Ziming Liu",
+      "Jeff Gore"
+    ],
+    "abstract": "The success of today's large language models (LLMs) depends on the observation that larger models perform better. However, the origin of this neural scaling law, that loss decreases as a power law with model size, remains unclear. We propose that representation superposition, meaning that LLMs represent more features than they have dimensions, can be a key contributor to loss and cause neural scaling. Based on Anthropic's toy model, we use weight decay to control the degree of superposition, allowing us to systematically study how loss scales with model size. When superposition is weak, the loss follows a power law only if data feature frequencies are power-law distributed. In contrast, under strong superposition, the loss generically scales inversely with model dimension across a broad class of frequency distributions, due to geometric overlaps between representation vectors. We confirmed that open-sourced LLMs operate in the strong superposition regime and have loss scaling inversely with model dimension, and that the Chinchilla scaling laws are also consistent with this behavior. Our results identify representation superposition as a central driver of neural scaling laws, providing insights into questions like when neural scaling laws can be improved and when they will break down.",
+    "keywords": [
+      "LLM",
+      "superposition",
+      "neural scaling law"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/58f6788f2c9231a4e1f19cf31d1e6accd0fbd43f.pdf",
+    "tldr": "Neural scaling law in LLMs is explained through representation interference due to superposition",
+    "reply_count": 22,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "i5WnXNjwbR",
+    "forum_url": "https://openreview.net/forum?id=i5WnXNjwbR",
+    "number": 9386,
+    "version": 2,
+    "submission_date": "2025-05-08 00:31:29",
+    "title": "ImageNet-trained CNNs are not biased towards texture: Revisiting feature reliance through controlled suppression",
+    "authors": [
+      "Tom Burgert",
+      "Oliver Stoll",
+      "Paolo Rota",
+      "Begüm Demir"
+    ],
+    "abstract": "The hypothesis that Convolutional Neural Networks (CNNs) are inherently texture-biased has shaped much of the discourse on feature use in deep learning. We revisit this hypothesis by examining limitations in the cue-conflict experiment by Geirhos et al. To address these limitations, we propose a domain-agnostic framework that quantifies feature reliance through systematic suppression of shape, texture, and color cues, avoiding the confounds of forced-choice conflicts. By evaluating humans and neural networks under controlled suppression conditions, we find that CNNs are not inherently texture-biased but predominantly rely on local shape features. Nonetheless, this reliance can be substantially mitigated through modern training strategies or architectures (ConvNeXt, ViTs). We further extend the analysis across computer vision, medical imaging, and remote sensing, revealing that reliance patterns differ systematically: computer vision models prioritize shape, medical imaging models emphasize color, and remote sensing models exhibit a stronger reliance on texture. Code is available at https://github.com/tomburgert/feature-reliance.",
+    "keywords": [
+      "texture bias",
+      "feature reliance",
+      "shape vs. texture",
+      "model interpretability"
+    ],
+    "primary_area": "evaluation",
+    "pdf_url": "https://openreview.net/pdf/a5762ff4e9fc3f90b32694fbe25d5be355f45e5e.pdf",
+    "tldr": "We revisit the texture bias hypothesis in CNNs by proposing a domain-agnostic suppression protocol, finding that contrary to prior claims, CNNs primarily rely on local shape instead of texture features.",
+    "reply_count": 17,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "RF3miSqdXa",
+    "forum_url": "https://openreview.net/forum?id=RF3miSqdXa",
+    "number": 9016,
+    "version": 2,
+    "submission_date": "2025-05-07 19:12:20",
+    "title": "On Linear Mode Connectivity of Mixture-of-Experts Architectures",
+    "authors": [
+      "Viet-Hoang Tran",
+      "Van-Hoan Trinh",
+      "Khanh Vinh Bui",
+      "Tan Minh Nguyen"
+    ],
+    "abstract": "Linear Mode Connectivity (LMC) is a notable phenomenon in the loss landscapes\nof neural networks, wherein independently trained models have been observed to\nbe connected—up to permutation symmetries—by linear paths in parameter space\nalong which the loss remains consistently low. This observation challenges classical\nviews of non-convex optimization and has implications for model ensembling,\ngeneralization, and our understanding of neural loss geometry. Inspired by recent\nstudies on LMC in standard neural networks, we systematically investigate this\nphenomenon within Mixture-of-Experts (MoE) architectures—a class of models\nknown for their scalability and computational efficiency, which combine traditional\nneural networks—referred to as experts—through a learnable gating mechanism.\nWe begin by conducting a comprehensive analysis of both dense and sparse gating\nregimes, demonstrating that the symmetries inherent to MoE architectures are\nfully characterized by permutations acting on both the expert components and the\ngating function. Building on these foundational findings, we propose a matching\nalgorithm that enables alignment between independently trained MoEs, thereby\nfacilitating the discovery of LMC. Finally, we empirically validate the presence of\nLMC using our proposed algorithm across diverse MoE configurations—including\ndense, sparse, and shared-expert variants—under a wide range of model settings\nand datasets of varying scales and modalities. Our results confirm the existence\nof LMC in MoE architectures and offer fundamental insights into the functional\nlandscape and optimization dynamics of deep learning models.",
+    "keywords": [
+      "linear mode connectivity",
+      "mixture-of-experts"
+    ],
+    "primary_area": "theory",
+    "pdf_url": "https://openreview.net/pdf/6509bb2b84b9ccd4a191706a49fcb44743a150c7.pdf",
+    "tldr": "We investigate Linear Mode Connectivity (LMC) in Mixture-of-Experts (MoE) architectures by analyzing their underlying permutation symmetries and proposing expert-matching algorithms that align independently trained MoEs to reveal LMC.",
+    "reply_count": 28,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "0biUwyjKkm",
+    "forum_url": "https://openreview.net/forum?id=0biUwyjKkm",
+    "number": 8330,
+    "version": 2,
+    "submission_date": "2025-05-07 02:41:54",
+    "title": "OpenHOI: Open-World Hand-Object Interaction Synthesis with Multimodal Large Language Model",
+    "authors": [
+      "Zhenhao Zhang",
+      "Ye Shi",
+      "Lingxiao Yang",
+      "Suting Ni",
+      "Qi Ye",
+      "Jingya Wang"
+    ],
+    "abstract": "Understanding and synthesizing realistic 3D hand-object interactions (HOI) is critical for applications ranging from immersive AR/VR to dexterous robotics. Existing methods struggle with generalization, performing well on closed-set objects and predefined tasks but failing to handle unseen objects or open-vocabulary instructions. We introduce OpenHOI, the first framework for open-world HOI synthesis, capable of generating long-horizon manipulation sequences for novel objects guided by free-form language commands. Our approach integrates a 3D Multimodal Large Language Model (MLLM) fine-tuned for joint affordance grounding and semantic task decomposition, enabling precise localization of interaction regions (e.g., handles, buttons) and breakdown of complex instructions (e.g., “Find a water bottle and take a sip”) into executable sub-tasks. To synthesize physically plausible interactions, we propose an affordance-driven diffusion model paired with a training-free physics refinement stage that minimizes penetration and optimizes affordance alignment.\nEvaluations across diverse scenarios demonstrate OpenHOI’s superiority over state-of-the-art methods in generalizing to novel object categories, multi-stage tasks, and complex language instructions.",
+    "keywords": [
+      "Hand-Object Interaction;Open-World;Large Language Models"
+    ],
+    "primary_area": "applications",
+    "pdf_url": "https://openreview.net/pdf/a0bbfb206b2f04ead60917b95a0c5b6accccc70e.pdf",
+    "tldr": "Introduce the first Open-World Hand-Object Interaction (HOI) Synthesis framework that can generate Long-horizon HOI sequences of Unseen Objects from Open-vocabulary instruction with 3D Multimodal Large Language Model.",
+    "reply_count": 19,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "koEALFNBj1",
+    "forum_url": "https://openreview.net/forum?id=koEALFNBj1",
+    "number": 8054,
+    "version": 2,
+    "submission_date": "2025-05-06 19:55:55",
+    "title": "Representation Entanglement for Generation: Training Diffusion Transformers Is Much Easier Than You Think",
+    "authors": [
+      "Ge Wu",
+      "Shen Zhang",
+      "Ruijing Shi",
+      "Shanghua Gao",
+      "Zhenyuan Chen",
+      "Lei Wang",
+      "Zhaowei Chen",
+      "Hongcheng Gao",
+      "Yao Tang",
+      "jian Yang",
+      "Ming-Ming Cheng",
+      "Xiang Li"
+    ],
+    "abstract": "REPA and its variants effectively mitigate training challenges in diffusion models by incorporating external visual representations from pretrained models, through alignment between the noisy hidden projections of denoising networks and foundational clean image representations. We argue that the external alignment, which is absent during the entire denoising inference process, falls short of fully harnessing the potential of discriminative representations. In this work, we propose a straightforward method called \\textit{\\textbf{R}epresentation \\textbf{E}ntanglement for \\textbf{G}eneration} (\\textbf{REG}), which entangles low-level image latents with a single high-level class token from pretrained foundation models for denoising. \nREG acquires the capability to produce coherent image-class pairs directly from pure noise, substantially improving both generation quality and training efficiency.\nThis is accomplished with negligible additional inference overhead, requiring only one single additional token for denoising (<0.5\\% increase in FLOPs and latency).\nThe inference process concurrently reconstructs both image latents and their corresponding global semantics, where the acquired semantic knowledge actively guides and enhances the image generation process.\nOn ImageNet 256$\\times$256, SiT-XL/2 + REG demonstrates remarkable convergence acceleration, achieving $\\textbf{63}\\times$ and $\\textbf{23}\\times$ faster training than SiT-XL/2 and SiT-XL/2 + REPA, respectively. \nMore impressively, SiT-L/2 + REG trained for merely 400K iterations outperforms SiT-XL/2 + REPA trained for 4M iterations ($\\textbf{10}\\times$ longer). Code is available at: https://github.com/Martinser/REG.",
+    "keywords": [
+      "Diffusion Model Acceleration; Representation Entanglement; Diffusion Transformers"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/676c746c84162a27e283ab8e656b347b8fa27b91.pdf",
+    "tldr": "",
+    "reply_count": 20,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "s6k9l5yX8e",
+    "forum_url": "https://openreview.net/forum?id=s6k9l5yX8e",
+    "number": 7418,
+    "version": 2,
+    "submission_date": "2025-05-06 02:58:17",
+    "title": "Dynam3D: Dynamic Layered 3D Tokens Empower VLM for Vision-and-Language Navigation",
+    "authors": [
+      "Zihan Wang",
+      "Seungjun Lee",
+      "Gim Hee Lee"
+    ],
+    "abstract": "Vision-and-Language Navigation (VLN) is a core task where embodied agents leverage their spatial mobility to navigate in 3D environments toward designated destinations based on natural language instructions. Recently, video-language large models (Video-VLMs) with strong generalization capabilities and rich commonsense knowledge have shown remarkable performance when applied to VLN tasks. However, these models still encounter the following challenges when applied to real-world 3D navigation: 1) Insufficient understanding of 3D geometry and spatial semantics; 2) Limited capacity for large-scale exploration and long-term environmental memory; 3) Poor adaptability to dynamic and changing environments.To address these limitations, we propose Dynam3D, a dynamic layered 3D representation model that leverages language-aligned, generalizable, and hierarchical 3D representations as visual input to train 3D-VLM in navigation action prediction. Given posed RGB-D images, our Dynam3D projects 2D CLIP features into 3D space and constructs multi-level 3D patch-instance-zone representations for 3D geometric and semantic understanding with a dynamic and layer-wise update strategy.  Our Dynam3D is capable of online encoding and localization of 3D instances, and dynamically updates them in changing environments to provide large-scale exploration and long-term memory capabilities for navigation. By leveraging large-scale 3D-language pretraining and task-specific adaptation, our Dynam3D sets new state-of-the-art performance on VLN benchmarks including R2R-CE, REVERIE-CE and NavRAG-CE under monocular settings. Furthermore, experiments for pre-exploration, lifelong memory, and real-world robot validate the effectiveness of practical deployment.",
+    "keywords": [
+      "Vision-and-Language Navigation",
+      "3D Vision-Language Model"
+    ],
+    "primary_area": "applications",
+    "pdf_url": "https://openreview.net/pdf/7d0f1ac9561fa319deafaba5a89fc066c63b1e5d.pdf",
+    "tldr": "A multi-level patch-instance-zone 3D representation model with a hierarchical dynamic online update strategy for embodied navigation.",
+    "reply_count": 21,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "NM4emKloy6",
+    "forum_url": "https://openreview.net/forum?id=NM4emKloy6",
+    "number": 7354,
+    "version": 2,
+    "submission_date": "2025-05-06 00:06:24",
+    "title": "Learning (Approximately) Equivariant Networks via Constrained Optimization",
+    "authors": [
+      "Andrei Manolache",
+      "Luiz F. O. Chamon",
+      "Mathias Niepert"
+    ],
+    "abstract": "Equivariant neural networks are designed to respect symmetries through their architecture, boosting generalization and sample efficiency when those symmetries are present in the data distribution. Real-world data, however, often departs from perfect symmetry because of noise, structural variation, measurement bias, or other symmetry-breaking effects. Strictly equivariant models may struggle to fit the data, while unconstrained models lack a principled way to leverage partial symmetries. Even when the data is fully symmetric, enforcing equivariance can hurt training by limiting the model to a restricted region of the parameter space. Guided by homotopy principles, where an optimization problem is solved by gradually transforming a simpler problem into a complex one, we introduce Adaptive Constrained Equivariance (ACE), a constrained optimization approach that starts with a flexible, non-equivariant model and gradually reduces its deviation from equivariance. This gradual tightening smooths training early on and settles the model at a data-driven equilibrium, balancing between equivariance and non-equivariance. Across multiple architectures and tasks, our method consistently improves performance metrics, sample efficiency, and robustness to input perturbations compared with strictly equivariant models and heuristic equivariance relaxations.",
+    "keywords": [
+      "approximate",
+      "equivariant",
+      "neural",
+      "networks",
+      "constrained",
+      "optimization"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/bad695bbebc45b9bbbf25c3c5f33f08aaf146e4d.pdf",
+    "tldr": "We introduce Adaptive Constrained Equivariance, a homotopy-inspired constrained optimization apprach for training equivariant neural networks.",
+    "reply_count": 21,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "jRXgRC6fu7",
+    "forum_url": "https://openreview.net/forum?id=jRXgRC6fu7",
+    "number": 6518,
+    "version": 2,
+    "submission_date": "2025-05-04 08:39:19",
+    "title": "SAGE: A Unified Framework for Generalizable Object State Recognition with State-Action Graph Embedding",
+    "authors": [
+      "Yuan Zang",
+      "Zitian Tang",
+      "Junho Cho",
+      "Jaewook Yoo",
+      "Chen Sun"
+    ],
+    "abstract": "Recognizing the physical states of objects and their transformations within videos is crucial for structured video understanding and enabling robust real-world applications, such as robotic manipulation. However, pretrained vision-language models often struggle to capture these nuanced dynamics and their temporal context, and specialized object state recognition frameworks may not generalize to unseen actions or objects. We introduce SAGE (State-Action Graph Embeddings), a novel framework that offers a unified model of physical state transitions by decomposing states into fine-grained, language-described visual concepts that are sharable across different objects and actions. SAGE initially leverages Large Language Models to construct a State-Action Graph, which is then multimodally refined using Vision-Language Models. Extensive experiments show that our method significantly outperforms baselines, generalizes effectively to unseen objects and actions in open-world settings. SAGE improves the prior state-of-the-art by as much as 14.6% on novel state recognition with less than 5% of its inference time.",
+    "keywords": [
+      "Object State Recognition",
+      "Graph Embeddings",
+      "Video Understanding"
+    ],
+    "primary_area": "applications",
+    "pdf_url": "https://openreview.net/pdf/f69060f1171982f7fa7e874c52b6350cd4c3e738.pdf",
+    "tldr": "We propose a unified and generalizable framework for object state recognition in video data.",
+    "reply_count": 18,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "4OsgYD7em5",
+    "forum_url": "https://openreview.net/forum?id=4OsgYD7em5",
+    "number": 6514,
+    "version": 2,
+    "submission_date": "2025-05-04 08:15:40",
+    "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?",
+    "authors": [
+      "Yang Yue",
+      "Zhiqi Chen",
+      "Rui Lu",
+      "Andrew Zhao",
+      "Zhaokai Wang",
+      "Yang Yue",
+      "Shiji Song",
+      "Gao Huang"
+    ],
+    "abstract": "Reinforcement Learning with Verifiable Rewards (RLVR) has recently demonstrated notable success in enhancing the reasoning performance of large language models (LLMs), particularly in mathematics and programming tasks. \nIt is widely believed that, similar to how traditional RL helps agents to explore and learn new strategies, RLVR enables LLMs to continuously self-improve, thus acquiring novel reasoning abilities that exceed the capacity of the corresponding base models. \nIn this study, we take a critical look at \\textit{the current state of RLVR} by systematically probing the reasoning capability boundaries of RLVR-trained LLMs across diverse model families, RL algorithms, and math/coding/visual reasoning benchmarks, using pass@\\textit{k} at large \\textit{k} values as the evaluation metric.\nWhile RLVR improves sampling efficiency towards the correct path, we surprisingly find that current training does \\emph{not} elicit fundamentally new reasoning patterns.\nWe observe that while RLVR-trained models outperform their base models at smaller values of $k$ (\\eg, $k$=1), base models achieve higher pass@$k$ score when $k$ is large.\nMoreover, we observe that the reasoning capability boundary of LLMs often narrows as RLVR training progresses.\nFurther coverage and perplexity analysis shows that the reasoning paths generated by RLVR models are already included in the base models' sampling distribution, suggesting that their reasoning abilities originate from and are \\textit{bounded} by the base model. \nFrom this perspective, treating the base model as an upper bound, our quantitative analysis shows that six popular RLVR algorithms perform similarly and remain far from optimal in fully leveraging the potential of the base model.\nIn contrast, we find that distillation can introduce new reasoning patterns from the teacher and genuinely expand the model’s reasoning capabilities.\nTaken together, our findings suggest that current RLVR methods have not fully realized the potential of RL to elicit genuinely novel reasoning abilities in LLMs. This underscores the need for improved RL paradigms—such as continual scaling and multi-turn agent-environment interaction—to unlock this potential.",
+    "keywords": [
+      "reinforcement learning with verifiable reward",
+      "LLM reasoning"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/c3957c2dc397dd6f7bf1e3da21cebaeca53844af.pdf",
+    "tldr": "We systematically examine the current state of RLVR and surprisingly find that it does not elicit fundamentally new reasoning patterns—revealing a gap between the potential of RL and the actual impact of current RLVR methods.",
+    "reply_count": 23,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "s6YHno8Ke3",
+    "forum_url": "https://openreview.net/forum?id=s6YHno8Ke3",
+    "number": 6278,
+    "version": 2,
+    "submission_date": "2025-05-03 15:47:35",
+    "title": "Learning to Learn with Contrastive Meta-Objective",
+    "authors": [
+      "Shiguang Wu",
+      "Yaqing Wang",
+      "Yatao Bian",
+      "Quanming Yao"
+    ],
+    "abstract": "Meta-learning enables learning systems to adapt quickly to new tasks, similar to humans.\n\tDifferent meta-learning approaches all work under/with the mini-batch episodic training framework. Such framework naturally gives the information about task identity, which can serve as additional supervision for meta-training to improve generalizability. We propose to exploit task identity as additional supervision in meta-training, inspired by the alignment and discrimination ability which is is intrinsic in human's fast learning.\n\tThis is achieved by contrasting what meta-learners learn, i.e., model representations.\n\tThe proposed ConML is evaluating and optimizing the contrastive meta-objective under a problem- and learner-agnostic meta-training framework.\n\tWe demonstrate that ConML integrates seamlessly with existing meta-learners, as well as in-context learning models, and brings significant boost in performance with small implementation cost.",
+    "keywords": [
+      "Meta-Learning",
+      "Contrastive Learning"
+    ],
+    "primary_area": "general_machine_learning",
+    "pdf_url": "https://openreview.net/pdf/e79c7a76c50f1b65836568f79b23039109a71e36.pdf",
+    "tldr": "",
+    "reply_count": 21,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "JFygzwx8SJ",
+    "forum_url": "https://openreview.net/forum?id=JFygzwx8SJ",
+    "number": 5873,
+    "version": 2,
+    "submission_date": "2025-05-02 14:49:22",
+    "title": "KVzip: Query-Agnostic KV Cache Compression with Context Reconstruction",
+    "authors": [
+      "Jang-Hyun Kim",
+      "Jinuk Kim",
+      "Sangwoo Kwon",
+      "Jae W. Lee",
+      "Sangdoo Yun",
+      "Hyun Oh Song"
+    ],
+    "abstract": "Transformer-based large language models (LLMs) cache context as key-value (KV) pairs during inference. As context length grows, KV cache sizes expand, leading to substantial memory overhead and increased attention latency. This paper introduces \\textit{KVzip}, a query-agnostic KV cache eviction method enabling effective reuse of compressed KV caches across diverse queries. KVzip quantifies the importance of a KV pair using the underlying LLM to reconstruct original contexts from cached KV pairs, subsequently evicting pairs with lower importance. Extensive empirical evaluations demonstrate that KVzip reduces KV cache size by $3$-$4\\times$ and FlashAttention decoding latency by approximately $2\\times$, with negligible performance loss in question-answering, retrieval, reasoning, and code comprehension tasks. Evaluations include various models such as LLaMA3.1, Qwen2.5, and Gemma3, with context lengths reaching up to 170K tokens. KVzip significantly outperforms existing query-aware KV eviction methods, which suffer from performance degradation even at a 90\\% cache budget ratio under multi-query scenarios.",
+    "keywords": [
+      "Large Language Models",
+      "Efficient Inference",
+      "Long-Context Processing",
+      "KV Cache Compression"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/31fbad5b02e0ec167a202d1b5481e2b478a8dcfc.pdf",
+    "tldr": "We propose a novel query-agnostic KV cache eviction method for multi-query scenario.",
+    "reply_count": 17,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "NM8Apk61NA",
+    "forum_url": "https://openreview.net/forum?id=NM8Apk61NA",
+    "number": 5784,
+    "version": 2,
+    "submission_date": "2025-05-02 10:18:26",
+    "title": "HyperET: Efficient Training in Hyperbolic Space for Multi-modal Large Language Models",
+    "authors": [
+      "Zelin Peng",
+      "Zhengqin Xu",
+      "Qingyang Liu",
+      "Xiaokang Yang",
+      "Wei Shen"
+    ],
+    "abstract": "Multi-modal large language models (MLLMs) have emerged as a transformative approach for aligning visual and textual understanding. They typically require extremely high computational resources (e.g., thousands of GPUs) for training to achieve cross-modal alignment at multi-granularity levels. We argue that a key source of this inefficiency lies in the vision encoders they widely equip with, e.g., CLIP and SAM, which lack the alignment with language at multi-granularity levels. To address this issue, in this paper, we leverage hyperbolic space, which inherently models hierarchical levels and thus provides a principled framework for bridging the granularity gap between visual and textual modalities at an arbitrary granularity level. Concretely, we propose an efficient training paradigm for MLLMs, dubbed as \\blg, which can optimize visual representations to align with their textual counterparts at an arbitrary granularity level through dynamic hyperbolic radius adjustment in hyperbolic space. \\alg employs learnable matrices with M\\\"{o}bius multiplication operations, implemented via three effective configurations: diagonal scaling matrices, block-diagonal matrices, and banded matrices, providing a flexible yet efficient parametrization strategy. Comprehensive experiments across multiple MLLM benchmarks demonstrate that \\alg consistently improves both existing pre-training and fine-tuning MLLMs clearly with less than 1\\% additional parameters.",
+    "keywords": [
+      "Efficient Training",
+      "Multi-modal Large Language Models",
+      "Granularity Levels",
+      "Hyperbolic Space"
+    ],
+    "primary_area": "applications",
+    "pdf_url": "https://openreview.net/pdf/f452bafc6ef115e3e3079ee6b1310ca6833c5f1b.pdf",
+    "tldr": "",
+    "reply_count": 25,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "zwCb9cKHpd",
+    "forum_url": "https://openreview.net/forum?id=zwCb9cKHpd",
+    "number": 5691,
+    "version": 2,
+    "submission_date": "2025-05-02 04:38:57",
+    "title": "SAVVY: Spatial Awareness via Audio-Visual LLMs through Seeing and Hearing",
+    "authors": [
+      "Mingfei Chen",
+      "Zijun Cui",
+      "Xiulong Liu",
+      "Jinlin Xiang",
+      "Caleb Zheng",
+      "Jingyuan Li",
+      "Eli Shlizerman"
+    ],
+    "abstract": "3D spatial reasoning in dynamic, audio-visual environments is a cornerstone of human cognition yet remains largely unexplored by existing Audio-Visual Large Language Models (AV-LLMs) and benchmarks, which predominantly focus on static or 2D scenes. We introduce SAVVY-Bench, the first benchmark for 3D spatial reasoning in dynamic scenes with synchronized spatial audio. SAVVY-Bench is comprised of thousands of carefully curated question–answer pairs probing both directional and distance relationships involving static and moving objects, and requires fine-grained temporal grounding, consistent 3D localization, and multi-modal annotation. To tackle this challenge, we propose SAVVY, a novel training-free reasoning pipeline that consists of two stages: (i) Egocentric Spatial Tracks Estimation, which leverages AV-LLMs as well as other audio-visual methods to track the trajectories of key objects related to the query using both visual and spatial audio cues, and (ii) Dynamic Global Map Construction, which aggregates multi-modal queried object trajectories and converts them into a unified global dynamic map. Using the constructed map, a final QA answer is obtained through a coordinate transformation that aligns the global map with the queried viewpoint. Empirical evaluation demonstrates that SAVVY substantially enhances performance of state-of-the-art AV-LLMs, setting a new standard and stage for approaching dynamic 3D spatial reasoning in AV-LLMs.",
+    "keywords": [
+      "Audio-Visual",
+      "3D Spatial Reasoning",
+      "Multi-modal LLMs",
+      "Audio-Visual QA"
+    ],
+    "primary_area": "applications",
+    "pdf_url": "https://openreview.net/pdf/1e74d98676203a254bd6c3076b8adda5fb7f2c26.pdf",
+    "tldr": "A novel 3D audio-visual QA benchmark and training-free spatial reasoning pipeline for Audio-Visual LLMs",
+    "reply_count": 16,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "WCRPgBpbcA",
+    "forum_url": "https://openreview.net/forum?id=WCRPgBpbcA",
+    "number": 5358,
+    "version": 2,
+    "submission_date": "2025-05-01 16:50:09",
+    "title": "A multiscale analysis of mean-field transformers in the moderate interaction regime",
+    "authors": [
+      "Giuseppe Bruno",
+      "Federico Pasqualotto",
+      "Andrea Agazzi"
+    ],
+    "abstract": "In this paper, we study the evolution of tokens through the depth of encoder-only transformer models at inference time by modeling them as a system of particles interacting in a mean-field way and studying the corresponding dynamics. More specifically, we consider this problem in the moderate interaction regime, where the number $N$ of tokens is large and the inverse temperature parameter $\\beta$ of the model scales together with $N$. In this regime, the dynamics of the system displays a multiscale behavior: a fast phase, where the token empirical measure collapses on a low-dimensional space, an intermediate phase, where the measure further collapses into clusters, and a slow one, where such clusters sequentially merge into a single one. We provide a rigorous characterization of the limiting dynamics in each of these phases and prove convergence in the above mentioned limit, exemplifying our results with some simulations.",
+    "keywords": [
+      "mean-field limits",
+      "moderate interaction",
+      "mean-field transformers",
+      "self-attention models",
+      "clustering",
+      "multiscale"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/589c4dfe8c12def9fc06e98c93a8e40edf3dc678.pdf",
+    "tldr": "",
+    "reply_count": 23,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "CaSQgef484",
+    "forum_url": "https://openreview.net/forum?id=CaSQgef484",
+    "number": 5217,
+    "version": 2,
+    "submission_date": "2025-05-01 03:29:25",
+    "title": "Exploring Diffusion Transformer Designs via Grafting",
+    "authors": [
+      "Keshigeyan Chandrasegaran",
+      "Michael Poli",
+      "Daniel Y Fu",
+      "Dongjun Kim",
+      "Lea M. Hadzic",
+      "Manling Li",
+      "Agrim Gupta",
+      "Stefano Massaroli",
+      "Azalia Mirhoseini",
+      "Juan Carlos Niebles",
+      "Stefano Ermon",
+      "Li Fei-Fei"
+    ],
+    "abstract": "Designing model architectures requires decisions such as selecting operators (e.g., attention, convolution) and configurations (e.g., depth, width). However, evaluating the impact of these decisions on model quality requires costly pretraining, limiting architectural investigation.\nInspired by how new software is built on existing code, we ask: can new architecture designs be studied using pretrained models? To this end, we present *grafting*, a simple approach for editing pretrained diffusion transformers (DiTs) to materialize new architectures under small compute budgets. Informed by our analysis of activation behavior and attention locality, we construct a testbed based on the DiT-XL/2 design to study the impact of grafting on model quality. Using this testbed, we develop a family of hybrid designs via grafting: replacing softmax attention with gated convolution, local attention, and linear attention, and replacing MLPs with variable expansion ratio and convolutional variants. Notably, many hybrid designs achieve good quality (FID: 2.38–2.64 vs. 2.27 for DiT-XL/2)\nusing $<2$% pretraining compute. We then graft a text-to-image model (PixArt-$\\Sigma$), achieving a 1.43$\\times$ speedup with less than a 2% drop in GenEval score. Finally, we present a case study that restructures DiT-XL/2 by converting every pair of sequential transformer blocks into parallel blocks via grafting. This reduces model depth by 2$\\times$ and yields better quality (FID: 2.77) than other models of comparable depth. Together, we show that new diffusion model designs can be explored by grafting pretrained DiTs, with edits ranging from operator replacement to architecture restructuring. Code and grafted models: https://grafting.stanford.edu.",
+    "keywords": [
+      "Diffusion Transformers",
+      "Model Grafting",
+      "Architectural Editing",
+      "Hybrid Models"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/05e38c72c64dacc550ceeaeb4fd0a6ddbec1f9d8.pdf",
+    "tldr": "We propose grafting, a simple approach to materialize new architectures by editing pretrained diffusion transformers. It enables architectural exploration under small compute budgets.",
+    "reply_count": 33,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "rMdf8jhLR7",
+    "forum_url": "https://openreview.net/forum?id=rMdf8jhLR7",
+    "number": 4418,
+    "version": 2,
+    "submission_date": "2025-04-28 10:08:01",
+    "title": "Generalized Gradient Norm Clipping & Non-Euclidean $(L_0,L_1)$-Smoothness",
+    "authors": [
+      "Thomas Pethick",
+      "Wanyun Xie",
+      "Mete Erdogan",
+      "Kimon Antonakopoulos",
+      "Tony Silveti-Falls",
+      "Volkan Cevher"
+    ],
+    "abstract": "This work introduces a hybrid non-Euclidean optimization method which generalizes gradient norm clipping by combining steepest descent and conditional gradient approaches. The method achieves the best of both worlds by establishing a descent property under a generalized notion of ($L_0$,$L_1$)-smoothness. Weight decay is incorporated in a principled manner by identifying a connection to the Frank-Wolfe short step. In the stochastic case, we show an order optimal $O(n^{-1/4})$ convergence rate by leveraging a momentum based gradient estimator. We discuss how to instantiate the algorithms for deep learning, which we dub Clipped Scion, and demonstrate their properties on image classification and language modeling. The code is available at https://github.com/LIONS-EPFL/ClippedScion.",
+    "keywords": [
+      "Non-Euclidean",
+      "Frank-Wolfe",
+      "deep learning",
+      "clipping"
+    ],
+    "primary_area": "optimization",
+    "pdf_url": "https://openreview.net/pdf/786abaf03b555cdbe4b5d98e36b56e672a5ba78a.pdf",
+    "tldr": "",
+    "reply_count": 19,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "Q6IyUpBmrG",
+    "forum_url": "https://openreview.net/forum?id=Q6IyUpBmrG",
+    "number": 3558,
+    "version": 2,
+    "submission_date": "2025-04-22 15:02:59",
+    "title": "Rethinking Multimodal Learning from the Perspective of Mitigating Classification Ability Disproportion",
+    "authors": [
+      "Qing-Yuan Jiang",
+      "Longfei Huang",
+      "Yang Yang"
+    ],
+    "abstract": "Multimodal learning (MML) is significantly constrained by modality imbalance, leading to suboptimal performance in practice. While existing approaches primarily focus on balancing the learning of different modalities to address this issue, they fundamentally overlook the inherent disproportion in model classification ability, which serves as the primary cause of this phenomenon. In this paper, we propose a novel multimodal learning approach to dynamically balance the classification ability of weak and strong modalities by incorporating the principle of boosting. Concretely, we first propose a sustained boosting algorithm in multimodal learning by simultaneously optimizing the classification and residual errors. Subsequently, we introduce an adaptive classifier assignment strategy to dynamically facilitate the classification performance of the weak modality. Furthermore, we theoretically analyze the convergence property of the cross-modal gap function, ensuring the effectiveness of the proposed boosting scheme. To this end, the classification ability of strong and weak modalities is expected to be balanced, thereby mitigating the imbalance issue. Empirical experiments on widely used datasets reveal the superiority of our method through comparison with various state-of-the-art (SOTA) multimodal learning baselines. The source code is available at https://github.com/njustkmg/NeurIPS25-AUG.",
+    "keywords": [
+      "Multimodal Leanring; Modality Imbalance."
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/563e475619debd3c75b37d2a92ce87216f366c4e.pdf",
+    "tldr": "",
+    "reply_count": 17,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "XQ87Vo9GIz",
+    "forum_url": "https://openreview.net/forum?id=XQ87Vo9GIz",
+    "number": 3501,
+    "version": 2,
+    "submission_date": "2025-04-22 10:01:00",
+    "title": "TransferTraj: A Vehicle Trajectory Learning Model for Region and Task Transferability",
+    "authors": [
+      "Tonglong Wei",
+      "Yan Lin",
+      "Zeyu Zhou",
+      "Haomin Wen",
+      "Jilin Hu",
+      "Shengnan Guo",
+      "Youfang Lin",
+      "Gao Cong",
+      "Huaiyu Wan"
+    ],
+    "abstract": "Vehicle GPS trajectories provide valuable movement information that supports various downstream tasks and applications. A desirable trajectory learning model should be able to transfer across regions and tasks without retraining, avoiding the need to maintain multiple specialized models and subpar performance with limited training data. However, each region has its unique spatial features and contexts, which are reflected in vehicle movement patterns and are difficult to generalize. Additionally, transferring across different tasks faces technical challenges due to the varying input-output structures required for each task. Existing efforts towards transferability primarily involve learning embedding vectors for trajectories, which perform poorly in region transfer and require retraining of prediction modules for task transfer.\n\nTo address these challenges, we propose $\\textit{TransferTraj}$, a vehicle GPS trajectory learning model that excels in both region and task transferability. For region transferability, we introduce RTTE as the main learnable module within TransferTraj. It integrates spatial, temporal, POI, and road network modalities of trajectories to effectively manage variations in spatial context distribution across regions. It also introduces a TRIE module for incorporating relative information of spatial features and a spatial context MoE module for handling movement patterns in diverse contexts. For task transferability, we propose a task-transferable input-output scheme that unifies the input-output structure of different tasks into the masking and recovery of modalities and trajectory points. This approach allows TransferTraj to be pre-trained once and transferred to different tasks without retraining. We conduct extensive experiments on three real-world vehicle trajectory datasets under various transfer settings, including task transfer, zero-shot region transfer, and few-shot region transfer. Experimental results demonstrate that TransferTraj significantly outperforms state-of-the-art baselines in different scenarios, validating its effectiveness in region and task transfer. Code is available at https://github.com/wtl52656/TransferTraj.",
+    "keywords": [
+      "Spatio-temporal data mining",
+      "trajectory data mining",
+      "vehicle trajectory learning"
+    ],
+    "primary_area": "machine_learning_for_sciences",
+    "pdf_url": "https://openreview.net/pdf/aba567925beae9b368b62a73954ca94cc1626abe.pdf",
+    "tldr": "Propose a vehicle trajectory learning model capable of transferring across regions and tasks without retraining.",
+    "reply_count": 20,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "zIzZxDsNNP",
+    "forum_url": "https://openreview.net/forum?id=zIzZxDsNNP",
+    "number": 2625,
+    "version": 2,
+    "submission_date": "2025-04-15 23:28:14",
+    "title": "PhySense: Sensor Placement Optimization for Accurate Physics Sensing",
+    "authors": [
+      "Yuezhou Ma",
+      "Haixu Wu",
+      "Hang Zhou",
+      "Huikun Weng",
+      "Jianmin Wang",
+      "Mingsheng Long"
+    ],
+    "abstract": "Physics sensing plays a central role in many scientific and engineering domains, which inherently involves two coupled tasks: reconstructing dense physical fields from sparse observations and optimizing scattered sensor placements to observe maximum information. While deep learning has made rapid advances in sparse-data reconstruction, existing methods generally omit optimization of sensor placements, leaving the mutual enhancement between reconstruction and placement on the shelf. To change this suboptimal practice, we propose PhySense, a synergistic two-stage framework that learns to jointly reconstruct physical fields and to optimize sensor placements, both aiming for accurate physics sensing. The first stage involves a flow-based generative model enhanced by cross-attention to adaptively fuse sparse observations. Leveraging the reconstruction feedback, the second stage performs sensor placement via projected gradient descent to satisfy spatial constraints. We further prove that the learning objectives of the two stages are consistent with classical variance-minimization principles, providing theoretical guarantees. Extensive experiments across three challenging benchmarks, especially a 3D geometry dataset, indicate PhySense achieves state-of-the-art physics sensing accuracy and discovers informative sensor placements previously unconsidered. Code is available at this repository: https://github.com/thuml/PhySense.",
+    "keywords": [
+      "Physics sensing",
+      "sensor placement",
+      "flow models"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/9ebaf811dbe9696ccddf98031336e8be2dbfa478.pdf",
+    "tldr": "We propose a synergistic two-stage framework that learns to jointly reconstruct physical fields and to optimize sensor placements with theoretical guarantees, both aiming for accurate physics sensing.",
+    "reply_count": 20,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "JcEqp4aPmb",
+    "forum_url": "https://openreview.net/forum?id=JcEqp4aPmb",
+    "number": 2539,
+    "version": 2,
+    "submission_date": "2025-04-15 17:54:34",
+    "title": "InfinityStar: Uniﬁed Spacetime AutoRegressive Modeling for Visual Generation",
+    "authors": [
+      "Jinlai Liu",
+      "Jian Han",
+      "Bin Yan",
+      "Wuhui",
+      "Fengda Zhu",
+      "Xing Wang",
+      "Yi Jiang",
+      "BINGYUE PENG",
+      "Zehuan Yuan"
+    ],
+    "abstract": "We introduce InfinityStar, a unified spacetime autoregressive framework for high-resolution image and dynamic video synthesis. Building on the recent success of autoregressive modeling in both vision and language, our purely discrete approach jointly captures spatial and temporal dependencies within a single architecture. This unified design naturally supports a variety of generation tasks such as text-to-image, text-to-video, image-to-video, and long-duration video synthesis via straightforward temporal autoregression. Through extensive experiments, InfinityStar scores 83.74 on VBench, outperforming all autoregressive models by large margins, even surpassing diffusion competitors like HunyuanVideo. Without extra optimizations, our model generates a 5s, 720p video approximately 10$\\times$ faster than leading diffusion-based methods. To our knowledge, InfinityStar is the first discrete autoregressive video generator capable of producing industrial-level 720p videos. We release all code and models to foster further research in efficient, high-quality video generation.",
+    "keywords": [
+      "Visual Synthesis",
+      "Visual AutoRegressive Modeling",
+      "Text to Video Generation",
+      "Generative models"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/ac89202213ac8daf2cb3e1cd8f713e5cb5b96a56.pdf",
+    "tldr": "InfinityStar is the first discrete autoregressive video generator capable of producing industrial-level 720p videos.",
+    "reply_count": 22,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "gL4muAFwsh",
+    "forum_url": "https://openreview.net/forum?id=gL4muAFwsh",
+    "number": 1760,
+    "version": 2,
+    "submission_date": "2025-04-11 02:40:31",
+    "title": "Does Stochastic Gradient really succeed for bandits?",
+    "authors": [
+      "Dorian Baudry",
+      "Emmeran Johnson",
+      "Simon Vary",
+      "Ciara Pike-Burke",
+      "Patrick Rebeschini"
+    ],
+    "abstract": "Recent works of Mei et al. (2023, 2024) have deepened the theoretical understanding of the *Stochastic Gradient Bandit* (SGB) policy, showing that using a constant learning rate guarantees asymptotic convergence to the optimal policy, and that sufficiently *small* learning rates can yield logarithmic regret. However, whether logarithmic regret holds beyond small learning rates remains unclear. In this work, we take a step towards characterizing the regret *regimes* of SGB as a function of its learning rate. For two--armed bandits, we identify a sharp threshold, scaling with the sub-optimality gap $\\Delta$, below which SGB achieves *logarithmic* regret on all instances, and above which it can incur *polynomial* regret on some instances. \nThis result highlights the necessity of knowing (or estimating) $\\Delta$ to ensure logarithmic regret with a constant learning rate.\nFor general $K$-armed bandits, we further show the learning rate must scale inversely with $K$ to avoid polynomial regret. We introduce novel techniques to derive regret upper bounds for SGB, laying the groundwork for future advances in the theory of gradient-based bandit algorithms.",
+    "keywords": [
+      "bandits",
+      "policy gradient"
+    ],
+    "primary_area": "theory",
+    "pdf_url": "https://openreview.net/pdf/43a5e18b05c8b90bd88743b37cf38a4283e95b10.pdf",
+    "tldr": "We propose a novel regret analysis of a simple policy gradient algorithm for bandits, characterizing regret regimes depending on its learning rate.",
+    "reply_count": 17,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "INqBOmwIpG",
+    "forum_url": "https://openreview.net/forum?id=INqBOmwIpG",
+    "number": 1748,
+    "version": 2,
+    "submission_date": "2025-04-10 23:41:31",
+    "title": "Perception Encoder: The best visual embeddings are not at the output of the network",
+    "authors": [
+      "Daniel Bolya",
+      "Po-Yao Huang",
+      "Peize Sun",
+      "Jang Hyun Cho",
+      "Andrea Madotto",
+      "Chen Wei",
+      "Tengyu Ma",
+      "Jiale Zhi",
+      "Jathushan Rajasegaran",
+      "Hanoona Abdul Rasheed",
+      "Junke Wang",
+      "Marco Monteiro",
+      "Hu Xu",
+      "Shiyu Dong",
+      "Nikhila Ravi",
+      "Shang-Wen Li",
+      "Piotr Dollar",
+      "Christoph Feichtenhofer"
+    ],
+    "abstract": "We introduce Perception Encoder (PE), a family of state-of-the-art vision encoders for image and video understanding. Traditionally, vision encoders have relied on a variety of pretraining objectives, each excelling at different downstream tasks. Surprisingly, after scaling a carefully tuned image pretraining recipe and refining with a robust video data engine, we find that contrastive vision-language training alone can produce strong, general embeddings for all of these downstream tasks. There is only one caveat: these embeddings are hidden within the intermediate layers of the network. To draw them out, we introduce two alignment methods: language alignment for multimodal language modeling, and spatial alignment for dense prediction. Together, our PE family of models achieves state-of-the-art results on a wide variety of tasks, including zero-shot image and video classification and retrieval; document, image, and video Q&A; and spatial tasks such as detection, tracking, and depth estimation. We release our models, code, and novel dataset of synthetically and human-annotated videos: https://github.com/facebookresearch/perception_models",
+    "keywords": [
+      "vision encoder",
+      "vision-language",
+      "CLIP",
+      "pretraining",
+      "features",
+      "foundation model"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/13c5dcc0a71a6363ecf0568e449798970fe54388.pdf",
+    "tldr": "We develop a CLIP model that is SotA on both image and video zero-shot recognition. Using its strong, general features we further create SotA encoders for language and spatial tasks.",
+    "reply_count": 20,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "Gq4Gay8rDB",
+    "forum_url": "https://openreview.net/forum?id=Gq4Gay8rDB",
+    "number": 1028,
+    "version": 2,
+    "submission_date": "2025-04-07 14:39:28",
+    "title": "PlayerOne: Egocentric World Simulator",
+    "authors": [
+      "Yuanpeng Tu",
+      "Hao Luo",
+      "Xi Chen",
+      "Xiang Bai",
+      "Fan Wang",
+      "Hengshuang Zhao"
+    ],
+    "abstract": "We introduce PlayerOne, the first egocentric realistic world simulator, facilitating immersive and unrestricted exploration within vividly dynamic environments. Given an egocentric scene image from the user, PlayerOne can accurately construct the corresponding world and generate egocentric videos that are strictly aligned with the real-scene human motion of the user captured by an exocentric camera. PlayerOne is trained in a coarse-to-fine pipeline that first performs pretraining on large-scale egocentric text-video pairs for coarse-level egocentric understanding, followed by finetuning on synchronous motion-video data extracted from egocentric-exocentric video datasets with our automatic construction pipeline. Besides, considering the varying importance of different components, we design a part-disentangled motion injection scheme, enabling precise control of part-level movements. In addition, we devise a joint reconstruction framework that progressively models both the 4D scene and video frames, ensuring scene consistency in the long-form video generation. Experimental results demonstrate its great generalization ability in precise control of varying human movements and world-consistent modeling of diverse scenarios. It marks the first endeavor into egocentric real-world simulation and can pave the way for the community to delve into fresh frontiers of world modeling and its diverse applications.",
+    "keywords": [
+      "Video generation",
+      "World model",
+      "Egocentric understanding"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/21996c9451406ae52a6f0608f571d27879ac284d.pdf",
+    "tldr": "",
+    "reply_count": 42,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  },
+  {
+    "paper_id": "uWj4s7rMnR",
+    "forum_url": "https://openreview.net/forum?id=uWj4s7rMnR",
+    "number": 754,
+    "version": 2,
+    "submission_date": "2025-04-06 15:19:36",
+    "title": "Mean Flows for One-step Generative Modeling",
+    "authors": [
+      "Zhengyang Geng",
+      "Mingyang Deng",
+      "Xingjian Bai",
+      "J Zico Kolter",
+      "Kaiming He"
+    ],
+    "abstract": "We propose a principled and effective framework for one-step generative modeling. We introduce the notion of average velocity to characterize flow fields, in contrast to instantaneous velocity modeled by Flow Matching methods. A well-defined identity between average and instantaneous velocities is derived and used to guide neural network training. Our method, termed the \\textit{MeanFlow} model, is self-contained and requires no pre-training, distillation, or curriculum learning. MeanFlow demonstrates strong empirical performance: it achieves an FID of 3.43 with a single function evaluation (1-NFE) on ImageNet 256$\\times$256 trained from scratch, significantly outperforming previous state-of-the-art one-step diffusion/flow models. Our study substantially narrows the gap between one-step diffusion/flow models and their multi-step predecessors, and we hope it will motivate future research to revisit the foundations of these powerful models.",
+    "keywords": [
+      "Generative Models"
+    ],
+    "primary_area": "deep_learning",
+    "pdf_url": "https://openreview.net/pdf/611127035c61b58c8523c81094b8109e0d8f84fc.pdf",
+    "tldr": "",
+    "reply_count": 27,
+    "venue": "NeurIPS 2025 oral",
+    "venueid": "NeurIPS.cc/2025/Conference"
+  }
+]
