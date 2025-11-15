@@ -1,7 +1,9 @@
-# NeurIPS 2025 Papers Crawler
+# NeurIPS 2025 Papers Crawler & Viewer
 
 ## 简介
-这是一个用于从 OpenReview API 获取 NeurIPS 2025 会议论文的 Python 爬虫脚本，支持 Poster、Oral 和 Spotlight 三种论文类型。
+这是一个用于从 OpenReview API 获取 NeurIPS 2025 会议论文的 Python 爬虫脚本，支持 Poster、Oral 和 Spotlight 三种论文类型。项目还包含一个美观的HTML页面用于浏览所有论文。
+
+🌐 **在线浏览**: [https://KMnO4-zx.github.io/nips25-all-papers/](https://KMnO4-zx.github.io/nips25-all-papers/)
 
 ## 功能特点
 
