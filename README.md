@@ -1,20 +1,20 @@
 # NeurIPS 2025 Papers Crawler & Viewer
 
 ## 简介
-这是一个用于从 OpenReview API 获取 NeurIPS 2025 会议论文的 Python 爬虫脚本，支持 Poster、Oral 和 Spotlight 三种论文类型。项目还包含一个美观的HTML页面用于浏览所有论文。
+这是一个用于从 OpenReview API 获取 NeurIPS 2025 会议论文的 Python 爬虫脚本，支持 Poster、Oral 和 Spotlight 三种论文类型。项目还包含一个美观的HTML页面用于浏览所有论文，支持 LaTeX 公式渲染。
 
 🌐 **在线浏览**: [https://KMnO4-zx.github.io/nips25-all-papers/](https://KMnO4-zx.github.io/nips25-all-papers/)
 
 ## 功能特点
 
 - ✅ 自动分页获取所有论文（Poster/Oral/Spotlight）
-- ✅ 提取论文标题、作者、摘要、PDF链接等完整元数据
+- ✅ 提取论文标题、作者、摘要、关键词、研究领域等完整元数据
 - ✅ 支持 JSON 和 CSV 两种输出格式
+- ✅ 生成美观的 HTML 浏览页面，支持 KaTeX 数学公式渲染
+- ✅ 每篇论文提供 OpenReview、PDF 下载、LLM-Analysis 三个快捷链接
 - ✅ 显示进度条，实时监控获取进度
-- ✅ 支持断点续传（重新运行会自动跳过已获取的论文）
 - ✅ 错误处理和网络异常恢复
 - ✅ 遵守 API 请求的礼貌性延迟
-- ✅ 输出文件名自动根据论文类型调整
 
 ## 提取的字段
 
@@ -22,16 +22,27 @@
 - `paper_id`: 论文唯一标识符
 - `title`: 论文标题
 - `authors`: 作者列表
-- `abstract`: 论文摘要
+- `abstract`: 论文摘要（支持 LaTeX 公式）
 - `keywords`: 关键词列表
 - `primary_area`: 研究领域/类别
 - `venue`: 会议场馆 (如 "NeurIPS 2025 poster")
 - `tldr`: 简要总结（如果有）
 - `pdf_url`: PDF 下载链接
-  - 使用 `https://openreview.net/attachment?id={paper_id}&name=pdf` 格式
 - `forum_url`: 论文页面链接
 - `submission_date`: 提交日期
 - `reply_count`: 回复/评论数量
+
+## HTML 页面
+
+运行 `python create_html.py` 生成 `index.html` 浏览页面，包含以下特性：
+
+- 按 Oral / Spotlight / Poster 分类展示
+- 每篇论文显示标题、作者、研究领域、关键词、摘要
+- 摘要中的 LaTeX 数学公式通过 KaTeX 自动渲染
+- 每篇论文提供三个链接：
+  - 📄 OpenReview 论文页面（`https://openreview.net/forum?id={paper_id}`）
+  - 📄 PDF 下载（`https://openreview.net/pdf?id={paper_id}`）
+  - 🤖 LLM-Analysis（`https://paper-online.onrender.com/?id={paper_id}`）
 
 ## API 信息
 
